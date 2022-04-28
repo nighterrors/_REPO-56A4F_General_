@@ -21,8 +21,8 @@ I wonder if this gets copied when I create a repo based on this template?
 
 - **_Use `tab` characters to indent lines!_**
 - **Comments are not allowed at the ends of machine readable lines**, unless:
-- **It's work-in-progress.**<br /><aside>Eg.: Todo, Fixme, etc.</aside>
-- **It's a demonstration** and the comment explains what happens in that line or tells what to do with it.
+	- **It's work-in-progress.**<br /><aside>Eg.: Todo, Fixme, etc.</aside>
+	- **It's a demonstration** and the comment explains what happens in that line or tells what to do with it.
 - **Comments should start at the same indent as the line they belong to.**
 - 
 
