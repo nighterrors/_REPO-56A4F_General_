@@ -1,8 +1,8 @@
 ---
 name: Suggestion
 about: Suggest an idea for this project
-title: "[FRQ] "
-labels: ''
+title: "[IMP] "
+labels: enhancement
 assignees: ''
 
 ---
