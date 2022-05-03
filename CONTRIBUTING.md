@@ -24,13 +24,14 @@ See also:
 
 #### General
 
+- *Indentation should reflect logical structure.*
 - **_Use `tab` characters to indent lines!_**<sup id="Ag001Tabs">[[1]](#Fg001Tabs)</sup>
-- **Comments are not allowed at the ends of machine readable lines**<sup id="Ag002DontCommentAtEndOfLine">[[2]](#Fg002DontCommentAtEndOfLine)</sup>, unless:
+- **Comments are not allowed at the ends of machine readable lines.**<sup id="Ag002DontCommentAtEndOfLine">[[2]](#Fg002DontCommentAtEndOfLine)</sup>, unless:
 	- **It's work-in-progress.**<br /><aside>Eg.: Todo, Fixme, etc.</aside>
 	- **It's a demonstration** and the comment explains what happens in that line or tells what to do with it.
 - **Comments should start at the same indent as the line they belong to.**<sup id="Ag003CommentAtSameIndent">[[3]](#Fg003CommentAtSameIndent)</sup>
 - *Prefer descriptive names over explanations.*<sup id="Ag004DescriptiveNames">[[4]](#Fg004DescriptiveNames)</sup>
-- *But describe what needs to be in comments.**<sup id="Ag005AddDescriptions">[[5]](#Fg005AddDescriptions)</sup>
+- *But describe what needs to be in comments.*<sup id="Ag005AddDescriptions">[[5]](#Fg005AddDescriptions)</sup>
 
 #### HTML
 
@@ -86,44 +87,65 @@ See also:
 #### General
 
 <dl>
-	<dt id="Fg001Tabs"><a href="#Ag001Tabs">1^</a></dt>	<dd></dd>
-												<dd></dd>
-												<dd></dd>
-	<dt id="Fg002DontCommentAtEndOfLine"><a href="#Ag002DontCommentAtEndOfLine">2^</a></dt>	<dd></dd>
-	<dt id="Fg003CommentAtSameIndent"><a href="#Ag003CommentAtSameIndent">3^</a></dt>	<dd></dd>
+	<dt id="Fg001Tabs"><a title="Use `tab` characters to indent lines!" href="#Ag001Tabs">1^</a></dt>
+		<dd>**Tabs are flexible.** Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.</dd>
+		<dd></dd>
+		<dd>Using tabs saves you at least 1 B per character;)</dd>
+	<dt id="Fg002DontCommentAtEndOfLine"><a title="Comments are not allowed at the ends of machine readable lines" href="#Ag002DontCommentAtEndOfLine">2^</a></dt>
+		<dd></dd>
+	<dt id="Fg003CommentAtSameIndent"><a title="Comments should start at the same indent as the line they belong to." href="#Ag003CommentAtSameIndent">3^</a></dt>
+		<dd></dd>
 </dl>
 
 #### HTML
 
 <dl>
-	<dt id="Fh006SlashCloseEmptyElements"><a href="#Ah006SlashCloseEmptyElements">6^</a></dt>	<dd> </dd>
-	<dt id="Fh007BooleanAttributes"><a href="#Ah007BooleanAttributes">7^</a></dt>	<dd> </dd>
-	<dt id="Fh008StringAttributeValues"><a href="#Ah008StringAttributeValues">8^</a></dt>	<dd> </dd>
-	<dt id="Fh009SingleQuoteKeyWords"><a href="#Ah009SingleQuoteKeyWords">9^</a></dt>	<dd> </dd>
-	<dt id="Fh010DoubleQuoteStrings"><a href="#Ah010DoubleQuoteStrings">10^</a></dt>	<dd> </dd>
-	<dt id="Fh011AttributeOrder"><a href="#Ah011AttributeOrder">11^</a></dt>	<dd> </dd>
+	<dt id="Fh006SlashCloseEmptyElements"><a href="#Ah006SlashCloseEmptyElements">6^</a></dt>
+		<dd> </dd>
+	<dt id="Fh007BooleanAttributes"><a href="#Ah007BooleanAttributes">7^</a></dt>
+		<dd> </dd>
+	<dt id="Fh008StringAttributeValues"><a href="#Ah008StringAttributeValues">8^</a></dt>
+		<dd> </dd>
+	<dt id="Fh009SingleQuoteKeyWords"><a href="#Ah009SingleQuoteKeyWords">9^</a></dt>
+		<dd> </dd>
+	<dt id="Fh010DoubleQuoteStrings"><a href="#Ah010DoubleQuoteStrings">10^</a></dt>
+		<dd> </dd>
+	<dt id="Fh011AttributeOrder"><a href="#Ah011AttributeOrder">11^</a></dt>
+		<dd> </dd>
 </dl>
 
 #### CSS
 
 <dl>
-	<dt id="Fc010"><a href="#Ac010">10^</a></dt>	<dd> </dd>
-	<dt id="Fc011"><a href="#Ac011">11^</a></dt>	<dd> </dd>
-	<dt id="Fc012"><a href="#Ac012">12^</a></dt>	<dd> </dd>
-	<dt id="Fc013"><a href="#Ac013">13^</a></dt>	<dd> </dd>
-	<dt id="Fc014"><a href="#Ac014">14^</a></dt>	<dd> </dd>
-	<dt id="Fc015"><a href="#Ac015">15^</a></dt>	<dd> </dd>
+	<dt id="Fc010"><a href="#Ac010">10^</a></dt>
+		<dd> </dd>
+	<dt id="Fc011"><a href="#Ac011">11^</a></dt>
+		<dd> </dd>
+	<dt id="Fc012"><a href="#Ac012">12^</a></dt>
+		<dd> </dd>
+	<dt id="Fc013"><a href="#Ac013">13^</a></dt>
+		<dd> </dd>
+	<dt id="Fc014"><a href="#Ac014">14^</a></dt>
+		<dd> </dd>
+	<dt id="Fc015"><a href="#Ac015">15^</a></dt>
+		<dd> </dd>
 </dl>
 
 #### JS
 
 <dl>
-	<dt id="Fj016CapitalCamelCase"><a href="#Aj016CapitalCamelCase">16^</a></dt>	<dd> </dd>
-	<dt id="Fj017Classification"><a href="#Aj017Classification">17^</a></dt>	<dd> </dd>
-	<dt id="Fj018"><a href="#Aj018">18^</a></dt>	<dd> </dd>
-	<dt id="Fj019"><a href="#Aj019">19^</a></dt>	<dd> </dd>
-	<dt id="Fj020"><a href="#Aj020">20^</a></dt>	<dd> </dd>
-	<dt id="Fj021"><a href="#Aj021">21^</a></dt>	<dd> </dd>
+	<dt id="Fj016CapitalCamelCase"><a href="#Aj016CapitalCamelCase">16^</a></dt>
+		<dd> </dd>
+	<dt id="Fj017Classification"><a href="#Aj017Classification">17^</a></dt>
+		<dd> </dd>
+	<dt id="Fj018"><a href="#Aj018">18^</a></dt>
+		<dd> </dd>
+	<dt id="Fj019"><a href="#Aj019">19^</a></dt>
+		<dd> </dd>
+	<dt id="Fj020"><a href="#Aj020">20^</a></dt>
+		<dd> </dd>
+	<dt id="Fj021"><a href="#Aj021">21^</a></dt>
+		<dd> </dd>
 </dl>
 
 ## Pull Requests
