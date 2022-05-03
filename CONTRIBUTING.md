@@ -24,22 +24,22 @@ See also:
 
 #### General
 
-- **_Use `tab` characters to indent lines!_**<sup id="Ag001Tabs">[[1]](#Fg001Tabs)</sup>
-- **Comments are not allowed at the ends of machine readable lines**<sup id="Ag002DontCommentAtEndOfLine">[[2]](#Fg002DontCommentAtEndOfLine)</sup>, unless:
+- **_Use `tab` characters to indent lines!_**<sup id="Ag001Tabs">[\[1\]](#Fg001Tabs)</sup>
+- **Comments are not allowed at the ends of machine readable lines**<sup id="Ag002DontCommentAtEndOfLine">[\[2\]](#Fg002DontCommentAtEndOfLine)</sup>, unless:
 	- **It's work-in-progress.**<br /><aside>Eg.: Todo, Fixme, etc.</aside>
 	- **It's a demonstration** and the comment explains what happens in that line or tells what to do with it.
-- **Comments should start at the same indent as the line they belong to.**<sup id="Ag003CommentAtSameIndent">[[3]](#Fg003CommentAtSameIndent)</sup>
-- *Prefer descriptive names over explanations.*<sup id="Ag004DescriptiveNames">[[4]](#Fg004DescriptiveNames)</sup>
-- *But describe what needs to be in comments.**<sup id="Ag005AddDescriptions">[[5]](#Fg005AddDescriptions)</sup>
+- **Comments should start at the same indent as the line they belong to.**<sup id="Ag003CommentAtSameIndent">[\[3\]](#Fg003CommentAtSameIndent)</sup>
+- *Prefer descriptive names over explanations.*<sup id="Ag004DescriptiveNames">[\[4\]](#Fg004DescriptiveNames)</sup>
+- *But describe what needs to be in comments.**<sup id="Ag005AddDescriptions">[\[5\]](#Fg005AddDescriptions)</sup>
 
 #### HTML
 
-- **Close self closing tags with ` />`.**<sup id="Ah006SlashCloseEmptyElements">[[6]](#Fh006SlashCloseEmptyElements)</sup>
-- **Booleans in HTML should be in short form.**<sup id="Ah007BooleanAttributes">[[7]](#Fh007BooleanAttributes)</sup><br /><aside>Eg.: ✅`defer` instead of 🚫`defer=true`.</aside>
-- **Attribute values should always be quoted.**<sup id="Ah008StringAttributeValues">[[8]](#Fh008StringAttributeValues)</sup>
-- **Use single quote `'` for well known keywords.**<sup id="Ah009SingleQuoteKeyWords">[[9]](#Fh009SingleQuoteKeyWords)</sup><br /><aside>Eg.: `<html lang='en' >`.</aside>
-- **But double quotes `"` for arbitrary strings.**<sup id="Ah010DoubleQuoteStrings">[[10]](#Fh010DoubleQuoteStrings)</sup><br /><aside>Eg.: `<a href="github.com" >`.</aside>
-- **Attribute order:**<sup id="Ah011AttributeOrder">[[11]](#Fh011AttributeOrder)</sup>
+- **Close self closing tags with ` />`.**<sup id="Ah006SlashCloseEmptyElements">[\[6\]](#Fh006SlashCloseEmptyElements)</sup>
+- **Booleans in HTML should be in short form.**<sup id="Ah007BooleanAttributes">[\[7\]](#Fh007BooleanAttributes)</sup><br /><aside>Eg.: ✅`defer` instead of 🚫`defer=true`.</aside>
+- **Attribute values should always be quoted.**<sup id="Ah008StringAttributeValues">[\[8\]](#Fh008StringAttributeValues)</sup>
+- **Use single quote `'` for well known keywords.**<sup id="Ah009SingleQuoteKeyWords">[\[9\]](#Fh009SingleQuoteKeyWords)</sup><br /><aside>Eg.: `<html lang='en' >`.</aside>
+- **But double quotes `"` for arbitrary strings.**<sup id="Ah010DoubleQuoteStrings">[\[10\]](#Fh010DoubleQuoteStrings)</sup><br /><aside>Eg.: `<a href="github.com" >`.</aside>
+- **Attribute order:**<sup id="Ah011AttributeOrder">[\[11\]](#Fh011AttributeOrder)</sup>
 	1. Class
 	2. ID
 	3. Title
@@ -55,8 +55,8 @@ See also:
 
 ##### Naming convention
 
-- **Use CapitalCamelCase for custom stuff**<sup id="Aj016CapitalCamelCase">[[16]](#Fj016CapitalCamelCase)</sup>, so they're clearly distinguishable from built-ins.
-- **The first two letters of the name are reserved for classification**<sup id="Aj017Classification">[[17]](#Fj017Classification)</sup>:
+- **Use CapitalCamelCase for custom stuff**<sup id="Aj016CapitalCamelCase">[\[16\]](#Fj016CapitalCamelCase)</sup>, so they're clearly distinguishable from built-ins.
+- **The first two letters of the name are reserved for classification**<sup id="Aj017Classification">[\[17\]](#Fj017Classification)</sup>:
 
 	|First letter|type of object|
 	|:---:|---|
@@ -91,6 +91,8 @@ See also:
 												<dd></dd>
 	<dt id="Fg002DontCommentAtEndOfLine"><a href="#Ag002DontCommentAtEndOfLine">2^</a></dt>	<dd></dd>
 	<dt id="Fg003CommentAtSameIndent"><a href="#Ag003CommentAtSameIndent">3^</a></dt>	<dd></dd>
+ <dt id="Fg004DescriptiveNames"><a href="#Ag004DescriptiveNames">4^</a></dt>		<dd></dd>
+ <dt id="Fg005AddDescriptions"><a href="#Ag005AddDescriptions">5^</a></dt>		<dd></dd>
 </dl>
 
 #### HTML
