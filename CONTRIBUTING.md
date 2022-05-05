@@ -2,9 +2,12 @@
 
 ## Purpose of this Repo
 
-I wonder if this gets copied when I create a repo based on this template?
+I wonder if this gets copied when I create a repo based on this template? - *It does*
+So I guess, this'll be a good starting point do new repos?
 
 ## Opening Issues
+
+- Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/[RepoGoesHere]/issues?q=is%3Aissue)!
 
 - If you found a [bug](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D)
 - Have a [suggestion](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=&template=suggestion.md&title=%5BIMP%5D)
@@ -15,7 +18,7 @@ I wonder if this gets copied when I create a repo based on this template?
 
 * [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards#Indentation)
 
-See also:
+#### See also
 
 * [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/)
 * [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/)
@@ -24,23 +27,22 @@ See also:
 
 #### General
 
-- *Indentation should reflect logical structure.*
-- **_Use `tab` characters to indent lines!_**<sup id="Ag001Tabs">[\[1\]](#Fg001Tabs)</sup>
-- **Comments are not allowed at the ends of machine readable lines.**<sup id="Ag002DontCommentAtEndOfLine">[\[2\]](#Fg002DontCommentAtEndOfLine)</sup>, unless:
-	- **It's work-in-progress.**<br /><aside>Eg.: Todo, Fixme, etc.</aside>
-	- **It's a demonstration** and the comment explains what happens in that line or tells what to do with it.
-- **Comments should start at the same indent as the line they belong to.**<sup id="Ag003CommentAtSameIndent">[\[3\]](#Fg003CommentAtSameIndent)</sup>
-- *Prefer descriptive names over explanations.*<sup id="Ag004DescriptiveNames">[\[4\]](#Fg004DescriptiveNames)</sup>
-- *But describe what needs to be in comments.*<sup id="Ag005AddDescriptions">[\[5\]](#Fg005AddDescriptions)</sup>
+- *Indentation should reflect logical structure.*<sup id="AgStructure"><a title="Duh." href="#FgStructure">[0]</a></sup>
+- **_Use `tab` characters to indent lines!_**<sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." href="#FgTabs">[1]</a></sup>
+- **Comments should start at the same indent as the line they belong to.**<sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." href="#FgCommentAtSameIndent">[2]</a></sup>
+- *Prefer descriptive names over explanations.*<sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." href="#FgDescriptiveNames">[3]</a></sup>
+- *But describe what needs to be in comments.*<sup id="AgAddDescriptions">[\[4\]](#FgAddDescriptions)</sup>
+- *Use comments to further structure your code* by adding titles to sections.<sup id="AgSections">[\[5\]](#FgSections)</sup>
 
 #### HTML
 
-- **Close self closing tags with ` />`.**<sup id="Ah006SlashCloseEmptyElements">[\[6\]](#Fh006SlashCloseEmptyElements)</sup>
-- **Booleans in HTML should be in short form.**<sup id="Ah007BooleanAttributes">[\[7\]](#Fh007BooleanAttributes)</sup><br /><aside>Eg.: ✅`defer` instead of 🚫`defer=true`.</aside>
-- **Attribute values should always be quoted.**<sup id="Ah008StringAttributeValues">[\[8\]](#Fh008StringAttributeValues)</sup>
-- **Use single quote `'` for well known keywords.**<sup id="Ah009SingleQuoteKeyWords">[\[9\]](#Fh009SingleQuoteKeyWords)</sup><br /><aside>Eg.: `<html lang='en' >`.</aside>
-- **But double quotes `"` for arbitrary strings.**<sup id="Ah010DoubleQuoteStrings">[\[10\]](#Fh010DoubleQuoteStrings)</sup><br /><aside>Eg.: `<a href="github.com" >`.</aside>
-- **Attribute order:**<sup id="Ah011AttributeOrder">[\[11\]](#Fh011AttributeOrder)</sup>
+- **Close self closing elements with ` />`.**<sup id="AhSpaceSlashCloseEmptyElements">[\[6\]](#FhSpaceSlashCloseEmptyElements)</sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside>
+- **Booleans in HTML should be in short form.**<sup id="AhBooleanAttributes">[\[7\]](#FhBooleanAttributes)</sup><br /><aside>Eg.: ✅`defer` instead of 🚫`defer=true`.</aside>
+- **Attribute values should always be quoted.**<sup id="AhStringAttributeValues">[\[8\]](#FhStringAttributeValues)</sup>
+- **Use single quote `'` for well known keywords.**<sup id="AhSingleQuoteKeyWords">[\[9\]](#FhSingleQuoteKeyWords)</sup><br /><aside>Eg.: `<html lang='en' >`.</aside>
+- **But double quotes `"` for arbitrary strings.**<sup id="AhDoubleQuoteStrings">[\[10\]](#FhDoubleQuoteStrings)</sup><br /><aside>Eg.: `<a href="github.com" >`.</aside>
+- **Tags, attributes and keywords should be lowercase.**<sup id="AhLowercaseKeywords">[\[11\]](#FhLowercaseKeywords)</sup><br /><aside>E.g.: `<link�rel='icon'�type='image/icon'�href="favicon.ico"�/>`
+- **Attribute order:**<sup id="AhAttributeOrder">[\[12\]](#FhAttributeOrder)</sup>
 	1. Class
 	2. ID
 	3. Title
@@ -50,14 +52,16 @@ See also:
 
 #### CSS
 
-- 
+<!--TODO-->
 
 #### JS
 
+<!--TODO-->
+
 ##### Naming convention
 
-- **Use CapitalCamelCase for custom stuff**<sup id="Aj016CapitalCamelCase">[\[16\]](#Fj016CapitalCamelCase)</sup>, so they're clearly distinguishable from built-ins.
-- **The first two letters of the name are reserved for classification**<sup id="Aj017Classification">[\[17\]](#Fj017Classification)</sup>:
+- **Use CapitalCamelCase for custom stuff**<sup id="AjCapitalCamelCase">[\[16\]](#FjCapitalCamelCase)</sup>, so they're clearly distinguishable from built-ins.
+- **The first two letters of the name are reserved for classification**<sup id="AjClassification">[\[17\]](#FjClassification)</sup>:
 
 	|First letter|type of object|
 	|:---:|---|
@@ -87,65 +91,64 @@ See also:
 #### General
 
 <dl>
-	<dt id="Fg001Tabs"><a title="Use `tab` characters to indent lines!" href="#Ag001Tabs">1^</a></dt>
-		<dd>**Tabs are flexible.** Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.</dd>
-		<dd></dd>
+	<dt id="FgStructure">0 <a title="Structure" href="#AgStructure">^</a> Structure:</dt>
+		<dd>Duh.</dd>
+	<dt id="FgTabs">1 <a title="Tabs" href="#AgTabs">^</a> Tabs:</dt>
+		<dd><b>Tabs are flexible.</b> Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.</dd>
 		<dd>Using tabs saves you at least 1 B per character;)</dd>
-	<dt id="Fg002DontCommentAtEndOfLine"><a title="Comments are not allowed at the ends of machine readable lines" href="#Ag002DontCommentAtEndOfLine">2^</a></dt>
-		<dd></dd>
-	<dt id="Fg003CommentAtSameIndent"><a title="Comments should start at the same indent as the line they belong to." href="#Ag003CommentAtSameIndent">3^</a></dt>
-		<dd></dd>
+		<dd>I haven't found any -good- reason not to.</dd>
+	<dt id="FgCommentAtSameIndent">2 <a title="Indent comments" href="#AgCommentAtSameIndent">^</a> Indent comments:</dt>
+		<dd>It looks nice and structured.</dd>
+	<dt id="FgDescriptiveNames">3 <a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a> Descriptive names:</dt>
+		<dd>It'll help remebering what it does, without having to find where it was explained.</dd>
+		<dd>It'll also help others better understand the code.</dd>
+	<dt id="FgAddDescriptions">4 <a title="Explain your code!" href="#AgAddDescriptions">^</a> Explain:</dt>
+		<dd>This helps understand the code that was written a long time ago.</dd>
+		<dd>But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers.</dd>
+		<dd>Also quite invaluable in debugging.</dd>
+  <dd><em>So please explain what each block of code supposed to do!</em></dd>
+ <dt id="FgSections">5 <a title="Sections" href="#AgSections">^</a> Sections:</dt>
+  <dd>Helps readability and finding relevant parts of the code.</dd>
 </dl>
 
 #### HTML
 
 <dl>
-	<dt id="Fh006SlashCloseEmptyElements"><a href="#Ah006SlashCloseEmptyElements">6^</a></dt>
-		<dd> </dd>
-	<dt id="Fh007BooleanAttributes"><a href="#Ah007BooleanAttributes">7^</a></dt>
-		<dd> </dd>
-	<dt id="Fh008StringAttributeValues"><a href="#Ah008StringAttributeValues">8^</a></dt>
-		<dd> </dd>
-	<dt id="Fh009SingleQuoteKeyWords"><a href="#Ah009SingleQuoteKeyWords">9^</a></dt>
-		<dd> </dd>
-	<dt id="Fh010DoubleQuoteStrings"><a href="#Ah010DoubleQuoteStrings">10^</a></dt>
-		<dd> </dd>
-	<dt id="Fh011AttributeOrder"><a href="#Ah011AttributeOrder">11^</a></dt>
+	<dt id="FhSpaceSlashCloseEmptyElements">6 <a href="#AhSpaceSlashCloseEmptyElements">^</a> Closing empty elements:</dt>
+		<dd>For XML compatibility.</dd>
+	<dt id="FhBooleanAttributes">7<a href="#AhBooleanAttributes">^</a> Boolean attributes:</dt>
+		<dd>To improve readability.</dd>
+	<dt id="FhStringAttributeValues">8 <a href="#AhStringAttributeValues">^</a> Quote attribute values:</dt>
+		<dd>For XML compatibility.</dd>
+  <dd>And to avoid errors.</dd>
+	<dt id="FhSingleQuoteKeyWords">9 <a href="#AhSingleQuoteKeyWords">^</a> Single quote keywords:</dt>
+		<dd>To help distinguish them.</dd>
+	<dt id="FhDoubleQuoteStrings">10 <a href="#AhDoubleQuoteStrings">^</a> Double quote strings:</dt>
+		<dd>To help distinguish keywords from.</dd>
+ <dt id="FhLowercaseKeywords">11 <a href="#AhLowercaseKeywords">^</a> Lowercase keywords:</dt>
+  <dd></dd>
+	<dt id="FhAttributeOrder">12 <a href="#AhAttributeOrder">^</a></dt>
 		<dd> </dd>
 </dl>
 
 #### CSS
 
 <dl>
-	<dt id="Fc010"><a href="#Ac010">10^</a></dt>
-		<dd> </dd>
-	<dt id="Fc011"><a href="#Ac011">11^</a></dt>
-		<dd> </dd>
-	<dt id="Fc012"><a href="#Ac012">12^</a></dt>
-		<dd> </dd>
-	<dt id="Fc013"><a href="#Ac013">13^</a></dt>
-		<dd> </dd>
-	<dt id="Fc014"><a href="#Ac014">14^</a></dt>
-		<dd> </dd>
-	<dt id="Fc015"><a href="#Ac015">15^</a></dt>
+	<dt id="Fc"><a href="#Ac">10^</a></dt>
 		<dd> </dd>
 </dl>
 
 #### JS
 
 <dl>
-	<dt id="Fj016CapitalCamelCase"><a href="#Aj016CapitalCamelCase">16^</a></dt>
+	<dt id="FjCapitalCamelCase"><a href="#AjCapitalCamelCase">16^</a></dt>
 		<dd> </dd>
-	<dt id="Fj017Classification"><a href="#Aj017Classification">17^</a></dt>
+	<dt id="FjClassification"><a href="#AjClassification">17^</a></dt>
 		<dd> </dd>
-	<dt id="Fj018"><a href="#Aj018">18^</a></dt>
-		<dd> </dd>
-	<dt id="Fj019"><a href="#Aj019">19^</a></dt>
-		<dd> </dd>
-	<dt id="Fj020"><a href="#Aj020">20^</a></dt>
-		<dd> </dd>
-	<dt id="Fj021"><a href="#Aj021">21^</a></dt>
+	<dt id="Fj"><a href="#Aj">18^</a></dt>
 		<dd> </dd>
 </dl>
 
 ## Pull Requests
+
+<!--Explain how to send PRs.-->
