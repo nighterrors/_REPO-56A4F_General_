@@ -16,39 +16,43 @@ So I guess, this'll be a good starting point do new repos?
 
 ### Based on
 
-* [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards#Indentation)
+- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards#Indentation)
 
 #### See also
 
-* [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/)
-* [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/)
+- [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/)
+- [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/)
 
 ### Key rules
 
 #### General
 
-- *Indentation should reflect logical structure.*<sup id="AgStructure"><a title="Duh." href="#FgStructure">[0]</a></sup>
-- **_Use `tab` characters to indent lines!_**<sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." href="#FgTabs">[1]</a></sup>
-- **Comments should start at the same indent as the line they belong to.**<sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." href="#FgCommentAtSameIndent">[2]</a></sup>
-- *Prefer descriptive names over explanations.*<sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." href="#FgDescriptiveNames">[3]</a></sup>
-- *But describe what needs to be in comments.*<sup id="AgAddDescriptions">[\[4\]](#FgAddDescriptions)</sup>
-- *Use comments to further structure your code* by adding titles to sections.<sup id="AgSections">[\[5\]](#FgSections)</sup>
+<ol start="0">
+<li><em>Indentation should reflect logical structure.</em><sup id="AgStructure"><a title="Duh." href="#FgStructure">[0]</a></sup></li>
+<li><strong><em>Use <kbd>tab</kbd> characters to indent lines!</em></strong><sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." href="#FgTabs">[1]</a></sup></li>
+<li><strong>Comments should start at the same indent as the line they belong to.</strong><sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." href="#FgCommentAtSameIndent">[2]</a></sup></li>
+<li><em>Prefer descriptive names over explanations.</em><sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." href="#FgDescriptiveNames">[3]</a></sup></li>
+<li><em>But describe what needs to be in comments.</em><sup id="AgAddDescriptions"><a title="This helps understand the code that was written a long time ago. But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers. Also quite invaluable in debugging. So please explain what each block of code supposed to do!" href="#FgAddDescriptions">[4]</a><sup></li>
+<li><em>Use comments to further structure your code</em> by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." href="#FgSections">[5]</sup></li>
+</ol>
 
 #### HTML
 
-- **Close self closing elements with ` />`.**<sup id="AhSpaceSlashCloseEmptyElements">[\[6\]](#FhSpaceSlashCloseEmptyElements)</sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside>
-- **Booleans in HTML should be in short form.**<sup id="AhBooleanAttributes">[\[7\]](#FhBooleanAttributes)</sup><br /><aside>Eg.: ✅`defer` instead of 🚫`defer=true`.</aside>
-- **Attribute values should always be quoted.**<sup id="AhStringAttributeValues">[\[8\]](#FhStringAttributeValues)</sup>
-- **Use single quote `'` for well known keywords.**<sup id="AhSingleQuoteKeyWords">[\[9\]](#FhSingleQuoteKeyWords)</sup><br /><aside>Eg.: `<html lang='en' >`.</aside>
-- **But double quotes `"` for arbitrary strings.**<sup id="AhDoubleQuoteStrings">[\[10\]](#FhDoubleQuoteStrings)</sup><br /><aside>Eg.: `<a href="github.com" >`.</aside>
-- **Tags, attributes and keywords should be lowercase.**<sup id="AhLowercaseKeywords">[\[11\]](#FhLowercaseKeywords)</sup><br /><aside>E.g.: `<link�rel='icon'�type='image/icon'�href="favicon.ico"�/>`
-- **Attribute order:**<sup id="AhAttributeOrder">[\[12\]](#FhAttributeOrder)</sup>
+<ol start="6">
+<li><strong>Close self-closing elements with <code> /></code>.</strong><sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside></li>
+<li><strong>Booleans in HTML should be in short form.</strong><sup id="AhBooleanAttributes"><a title="To improve readability." href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: âœ…<code>defer</code> instead of ðŸš«<code>defer=true</code>.</aside></li>
+<li><strong>Attribute values should always be quoted.</strong><sup id="AhStringAttributeValues"><a title="For XML compatibility. And to avoid errors." href="#FhStringAttributeValues">[8]</a></sup></li>
+<li><strong>Use single quote <code>'</code> for well known keywords.</strong><sup id="AhSingleQuoteKeyWords"><a title="To help distinguish them." href="#FhSingleQuoteKeyWords">[9]</a></sup><br /><aside>E.g.: <code>&lt;html lang='en' &gt;</code>.</aside></li>
+<li><strong>But double quotes <code>"</code> for arbitrary strings.</strong><sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: <code>&lt;a href="github.com" &gt;</code>.</aside></li>
+<li><strong>Tags, attributes and keywords should be lowercase.</strong><sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: <code>&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;</code></li>
+<li><strong>Attribute order:</strong><sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.</li>
 	1. Class
 	2. ID
 	3. Title
-	4. Others
+	4. ... Others ...
 	5. Booleans
-	6. Link (`href`, `src`, etc.)
+	6. Link (<code>href</code>, <code>src</code>, etc.)
+</ol>
 
 #### CSS
 
@@ -60,31 +64,99 @@ So I guess, this'll be a good starting point do new repos?
 
 ##### Naming convention
 
-- **Use CapitalCamelCase for custom stuff**<sup id="AjCapitalCamelCase">[\[16\]](#FjCapitalCamelCase)</sup>, so they're clearly distinguishable from built-ins.
-- **The first two letters of the name are reserved for classification**<sup id="AjClassification">[\[17\]](#FjClassification)</sup>:
+<ol start="14">
+<li><strong>Use CapitalCamelCase for custom stuff.</strong><sup id="AjCapitalCamelCase"><a title="Makes them clearly distinguishable from built-ins." href="#FjCapitalCamelCase">[14]</a></sup></li>
+<li><strong>The first two letters of the name are reserved for classification</strong><sup id="AjClassification"><a title="Helps to identify objects and their purpose. Thus helping with 3^, by providing a shorthand description of type and possibly content. Helps ensure 14^." href="#FjClassification">[15]</a></sup>:</li>
+</ol>
 
-	|First letter|type of object|
-	|:---:|---|
-	|F|Function|
-	|C|Constant|
-	|L|Variable declared with `let`|
-	|I|Variable declared implicitly (such as a function's argument)|
-	|V|Variable declared with `var`|
-	|K|Key in a dictionary|
-	|P|Class|
-	|D|Field|
-	|M|Method|
+<table>
+	<colgroup>
+		<col align='center' />
+		<col align='justify' />
+	</colgroup>
+	<tr>
+		<th>First letter</th>
+		<th>type of object</th>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>Function</td>
+	</tr>
+	<tr>
+		<td>C</td>
+		<td>Constant</td>
+	</tr>
+	<tr>
+		<td>L</td>
+		<td>Variable declared with <code>let</code></td>
+	</tr>
+	<tr>
+		<td>I</td>
+		<td>Variable declared implicitly (such as a function's argument)</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>Variable declared with <code>var</code></td>
+	</tr>
+	<tr>
+		<td>K</td>
+		<td>Key in a dictionary</td>
+	</tr>
+	<tr>
+		<td>P</td>
+		<td>Class</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>Field</td>
+	</tr>
+	<tr>
+		<td>M</td>
+		<td>Method</td>
+	</tr>
+</table>
 
-	|Second letter|type of data it holds / returns|
-	|:---:|---|
-	|n|None (e.g. when a function doesn't have return value)|
-	|b|Boolean|
-	|i|Integer|
-	|f|Float|
-	|s|String|
-	|a|Array|
-	|o|Object|
-	|v|Variant (if it's unknown, or can have different types)|
+<table>
+	<colgroup>
+		<col align='center' />
+		<col align='justify' />
+	</colgroup>
+	<tr>
+		<th>Second letter</th>
+		<th>type of data it holds / returns</th>
+	<tr>
+		<td>n</td>
+		<td>None (e.g. when a function doesn't have return value)</td>
+	</tr>
+	<tr>
+		<td>b</td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td>i</td>
+		<td>Integer</td>
+	</tr>
+	<tr>
+		<td>f</td>
+		<td>Float</td>
+	</tr>
+	<tr>
+		<td>s</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>a</td>
+		<td>Array</td>
+	</tr>
+	<tr>
+		<td>o</td>
+		<td>Object</td>
+	</tr>
+	<tr>
+		<td>v</td>
+		<td>Variant (if it's unknown, or can have different types)</td>
+	</tr>
+</table>
 
 ### Rationale
 
@@ -106,46 +178,49 @@ So I guess, this'll be a good starting point do new repos?
 		<dd>This helps understand the code that was written a long time ago.</dd>
 		<dd>But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers.</dd>
 		<dd>Also quite invaluable in debugging.</dd>
-  <dd><em>So please explain what each block of code supposed to do!</em></dd>
- <dt id="FgSections">5 <a title="Sections" href="#AgSections">^</a> Sections:</dt>
-  <dd>Helps readability and finding relevant parts of the code.</dd>
+		<dd><em>So please explain what each block of code supposed to do!</em></dd>
+	<dt id="FgSections">5 <a title="Sections" href="#AgSections">^</a> Sections:</dt>
+		<dd>Helps readability and finding relevant parts of the code.</dd>
 </dl>
 
 #### HTML
 
 <dl>
-	<dt id="FhSpaceSlashCloseEmptyElements">6 <a href="#AhSpaceSlashCloseEmptyElements">^</a> Closing empty elements:</dt>
+	<dt id="FhSpaceSlashCloseEmptyElements">6 <a title="Self-closing elements" href="#AhSpaceSlashCloseEmptyElements">^</a> Self-closing elements:</dt>
 		<dd>For XML compatibility.</dd>
-	<dt id="FhBooleanAttributes">7<a href="#AhBooleanAttributes">^</a> Boolean attributes:</dt>
+	<dt id="FhBooleanAttributes">7 <a title="Boolean attributes" href="#AhBooleanAttributes">^</a> Boolean attributes:</dt>
 		<dd>To improve readability.</dd>
-	<dt id="FhStringAttributeValues">8 <a href="#AhStringAttributeValues">^</a> Quote attribute values:</dt>
+	<dt id="FhStringAttributeValues">8 <a title="Quote attribute values" href="#AhStringAttributeValues">^</a> Quote attribute values:</dt>
 		<dd>For XML compatibility.</dd>
-  <dd>And to avoid errors.</dd>
-	<dt id="FhSingleQuoteKeyWords">9 <a href="#AhSingleQuoteKeyWords">^</a> Single quote keywords:</dt>
+		<dd>And to avoid errors.</dd>
+	<dt id="FhSingleQuoteKeyWords">9 <a title="Single quote keywords" href="#AhSingleQuoteKeyWords">^</a> Single quote keywords:</dt>
 		<dd>To help distinguish them.</dd>
-	<dt id="FhDoubleQuoteStrings">10 <a href="#AhDoubleQuoteStrings">^</a> Double quote strings:</dt>
+	<dt id="FhDoubleQuoteStrings">10 <a title="Double quote strings" href="#AhDoubleQuoteStrings">^</a> Double quote strings:</dt>
 		<dd>To help distinguish keywords from.</dd>
- <dt id="FhLowercaseKeywords">11 <a href="#AhLowercaseKeywords">^</a> Lowercase keywords:</dt>
-  <dd></dd>
-	<dt id="FhAttributeOrder">12 <a href="#AhAttributeOrder">^</a></dt>
-		<dd> </dd>
+	<dt id="FhLowercaseKeywords">11 <a title="Lowercase keywords" href="#AhLowercaseKeywords">^</a> Lowercase keywords:</dt>
+		<dd>To help distinguish text intended for humans vs. machines.</dd>
+	<dt id="FhAttributeOrder">12 <a title="Attribute order" href="#AhAttributeOrder">^</a> Attribute order:</dt>
+		<dd>It helps finding relevant parts of tags with a lot of attributes.</dd>
+		<dd>Keeps things nice and organized.</dd>
 </dl>
 
 #### CSS
 
 <dl>
-	<dt id="Fc"><a href="#Ac">10^</a></dt>
-		<dd> </dd>
+	<dt id="Fc">13 <a href="#Ac">^</a> </dt>
+		<dd></dd>
 </dl>
 
 #### JS
 
 <dl>
-	<dt id="FjCapitalCamelCase"><a href="#AjCapitalCamelCase">16^</a></dt>
-		<dd> </dd>
-	<dt id="FjClassification"><a href="#AjClassification">17^</a></dt>
-		<dd> </dd>
-	<dt id="Fj"><a href="#Aj">18^</a></dt>
+	<dt id="FjCapitalCamelCase">14 <a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a> CapitalCamelCase:</dt>
+		<dd>Makes them clearly distinguishable from built-ins.</dd>
+	<dt id="FjClassification">15 <a title="Classification" href="#AjClassification">^</a> Classification:</dt>
+		<dd>Helps to identify objects and their purpose.</dd>
+		<dd>Thus helping with 3<a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a>, by providing a shorthand description of type and possibly content.</dd>
+		<dd>Helps ensure 14<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.</dd>
+	<dt id="Fj">16 <a title="" href="#Aj">^</a> </dt>
 		<dd> </dd>
 </dl>
 
