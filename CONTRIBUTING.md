@@ -39,19 +39,21 @@ So I guess, this'll be a good starting point do new repos?
 #### HTML
 
 <ol start="6">
-<li><strong>Close self-closing elements with <code> /></code>.</strong><sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside></li>
-<li><strong>Booleans in HTML should be in short form.</strong><sup id="AhBooleanAttributes"><a title="To improve readability." href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: âœ…<code>defer</code> instead of ðŸš«<code>defer=true</code>.</aside></li>
+<li><strong>Close self-closing elements with <code> /&gt;</code>.</strong><sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside></li>
+<li><strong>Booleans in HTML should be in short form.</strong><sup id="AhBooleanAttributes"><a title="To improve readability." href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: ✅<code>defer</code> instead of ❌<code>defer=true</code>.</aside></li>
 <li><strong>Attribute values should always be quoted.</strong><sup id="AhStringAttributeValues"><a title="For XML compatibility. And to avoid errors." href="#FhStringAttributeValues">[8]</a></sup></li>
 <li><strong>Use single quote <code>'</code> for well known keywords.</strong><sup id="AhSingleQuoteKeyWords"><a title="To help distinguish them." href="#FhSingleQuoteKeyWords">[9]</a></sup><br /><aside>E.g.: <code>&lt;html lang='en' &gt;</code>.</aside></li>
 <li><strong>But double quotes <code>"</code> for arbitrary strings.</strong><sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: <code>&lt;a href="github.com" &gt;</code>.</aside></li>
 <li><strong>Tags, attributes and keywords should be lowercase.</strong><sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: <code>&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;</code></li>
 <li><strong>Attribute order:</strong><sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.</li>
-	1. Class
-	2. ID
-	3. Title
-	4. ... Others ...
-	5. Booleans
-	6. Link (<code>href</code>, <code>src</code>, etc.)
+	<ol>
+		<li>Class</li>
+		<li>ID</li>
+		<li>Title</li>
+		<li>... Others ...</li>
+		<li>Booleans</li>
+		<li>Link (<code>href</code>, <code>src</code>, etc.)</li>
+	</ol>
 </ol>
 
 #### CSS
