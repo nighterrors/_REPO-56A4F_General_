@@ -215,6 +215,8 @@ So I guess, this'll be a good starting point do new repos?
 
 #### JS
 
+##### Naming convention
+
 <dl>
 	<dt id="FjCapitalCamelCase">14 <a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a> CapitalCamelCase:</dt>
 		<dd>Makes them clearly distinguishable from built-ins.</dd>
