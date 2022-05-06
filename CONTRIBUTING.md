@@ -33,7 +33,7 @@ So I guess, this'll be a good starting point do new repos?
 <li><strong>Comments should start at the same indent as the line they belong to.</strong><sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." href="#FgCommentAtSameIndent">[2]</a></sup></li>
 <li><em>Prefer descriptive names over explanations.</em><sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." href="#FgDescriptiveNames">[3]</a></sup></li>
 <li><em>But describe what needs to be in comments.</em><sup id="AgAddDescriptions"><a title="This helps understand the code that was written a long time ago. But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers. Also quite invaluable in debugging. So please explain what each block of code supposed to do!" href="#FgAddDescriptions">[4]</a><sup></li>
-<li><em>Use comments to further structure your code</em> by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." href="#FgSections">[5]</sup></li>
+<li><em>Use comments to further structure your code</em> by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." href="#FgSections">[5]</a></sup></li>
 </ol>
 
 #### HTML
