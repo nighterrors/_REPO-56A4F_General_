@@ -1,16 +1,24 @@
 # Contributing
 
-## Purpose of this Repo
+[Intro goes here.] <!--TODO-->
+
+## Purpose of this Repo <!--TODO-->
 
 I wonder if this gets copied when I create a repo based on this template? - *It does*
 So I guess, this'll be a good starting point do new repos?
 
-## Opening Issues
+## Community Standards <!--TODO-->
 
-- Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/[RepoGoesHere]/issues?q=is%3Aissue)!
+See: <!--TODO-->
 
-- If you found a [bug](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D)
-- Have a [suggestion](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=&template=suggestion.md&title=%5BIMP%5D)
+## Forum <!--TODO-->
+
+- Help out by answering questions.
+- Especially if you are bilingual!
+
+## Documentation <!--TODO-->
+
+- Help out by writing documentation.
 
 ## Coding Style
 
@@ -72,6 +80,7 @@ So I guess, this'll be a good starting point do new repos?
 </ol>
 
 <table>
+	<!-- FIXME: Column alignment -->
 	<colgroup>
 		<col align='center' />
 		<col align='justify' />
@@ -119,6 +128,7 @@ So I guess, this'll be a good starting point do new repos?
 </table>
 
 <table>
+	<!-- FIXME: Column alignment -->
 	<colgroup>
 		<col align='center' />
 		<col align='justify' />
@@ -208,10 +218,10 @@ So I guess, this'll be a good starting point do new repos?
 
 #### CSS
 
-<dl>
+<!--dl>
 	<dt id="Fc">13 <a href="#Ac">^</a> </dt>
 		<dd></dd>
-</dl>
+</dl-->
 
 #### JS
 
@@ -224,10 +234,10 @@ So I guess, this'll be a good starting point do new repos?
 		<dd>Helps to identify objects and their purpose.</dd>
 		<dd>Thus helping with 3<a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a>, by providing a shorthand description of type and possibly content.</dd>
 		<dd>Helps ensure 14<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.</dd>
-	<dt id="Fj">16 <a title="" href="#Aj">^</a> </dt>
-		<dd> </dd>
+	<!--dt id="Fj">16 <a title="" href="#Aj">^</a> </dt>
+		<dd> </dd-->
 </dl>
 
-## Pull Requests
+## Pull Requests <!--TODO-->
 
 <!--Explain how to send PRs.-->
