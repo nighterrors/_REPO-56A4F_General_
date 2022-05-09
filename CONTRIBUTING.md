@@ -1,24 +1,25 @@
 # Contributing
 
-[Intro goes here.] <!--TODO-->
+[[Intro goes here.]] <!--TODO-->
 
-## Purpose of this Repo <!--TODO-->
+## Purpose of this Repo
 
-I wonder if this gets copied when I create a repo based on this template? - *It does*
-So I guess, this'll be a good starting point do new repos?
+[[@Purpose]]
 
-## Community Standards <!--TODO-->
+## Community Standards
 
-See: <!--TODO-->
+[See my community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)
+
+[[Spoiler: Tere are none:( - This is just a template, after all.]]
 
 ## Forum <!--TODO-->
 
-- Help out by answering questions.
-- Especially if you are bilingual!
+- [Help out by answering questions](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
+- *[Especially if you are bilingual](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/foreign-help)!*
 
 ## Documentation <!--TODO-->
 
-- Help out by writing documentation.
+- [Help out by writing documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
 
 ## Coding Style
 
@@ -238,6 +239,6 @@ See: <!--TODO-->
 		<dd> </dd-->
 </dl>
 
-## Pull Requests <!--TODO-->
+## Pull Requests
 
-<!--Explain how to send PRs.-->
+[[@PR]]

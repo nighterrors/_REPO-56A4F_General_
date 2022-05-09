@@ -1,117 +1,58 @@
-# [Title goes here.] <!--TODO-->
+# [[@Title]] <!--TODO-->
 
-[Intro goes here.] <!--TODO-->
+[[@Intro]] [[]]
+
+{:toc}
+
+## Getting [[@It]]
+
+See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
+[[Spoiler: It's empty.]]
+
+### Installation
+
+[[@HowToInstall]]
+
+### Building from source
+
+[[@HowToBuild]]
+
+## Using [[@It]]
+
+See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
+[[Spoiler: It's empty.]]
+
+[[@HowToUse]]
+
+## Community Standards
+
+Before interacting with our community, please take a moment and read our [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)
+
+[[Spoiler: Tere are none:( - This is just a template, after all.]]
 
 ## Getting help
 
-### If you don't speak English
-
-***WARNING:* I can only moderate the English translations!**
-
-1. Write in your own language.
-	- Use full sentences. 
-		- A full sentence include a subject and a predicate.
-		- A full sentence may include an object.
-	- Use simple sentences.
-	- Avoid pronouns.
-2. Translate your text to English.
-3. Translate back the English translation of your text to your own language.
-4. Check if the translation matches the original.
-	- If the translation does not match the original, refrase the original sentences.
-		- Go to 2.
-	- If the translation matches the original, then post both.
-		- Go to 5.
-5. [Post your message.](https://github.com/nighterrors/Apparently-naming-your-repo-is-the-toughest-part.-Also-this-is-just-a-template./discussions/categories/foreign-help)
-	1. Start by indicating the original text's language.
-	2. Post your original text.
-	3. Indicate that the auto-translated text follows.
-	4. Post the translated text.
-6. Be patient.
-
-#### Example
-
-##### [Spanish to English](https://translate.google.com/?sl=es&tl=en&text=1.%20Escriba%20en%20su%20propio%20idioma.%0A-%20Utilizar%20oraciones%20completas.%0A-%20Una%20oraci%C3%B3n%20completa%20incluye%20un%20sujeto%20y%20un%20predicado.%0A-%20Una%20oraci%C3%B3n%20completa%20puede%20incluir%20un%20objeto.%0A-%20Usar%20oraciones%20simples.%0A-%20Evita%20los%20pronombres.%0A2.%20Traduce%20tu%20texto%20al%20ingl%C3%A9s.%0A3.%20Vuelva%20a%20traducir%20la%20traducci%C3%B3n%20al%20ingl%C3%A9s%20de%20su%20texto%20a%20su%20propio%20idioma.%0A4.%20Compruebe%20si%20la%20traducci%C3%B3n%20coincide%20con%20el%20original.%0A-%20Si%20la%20traducci%C3%B3n%20no%20coincide%20con%20el%20original%2C%20reformule%20las%20oraciones%20originales.%0A-%20Ir%20a%202.%0A-%20Si%20la%20traducci%C3%B3n%20coincide%20con%20el%20original%2C%20publique%20ambos.%0A-%20Ir%20a%205.%0A5.%20%5BPublique%20su%20mensaje.%5D(https%3A%2F%2Fgithub.com%2Fnighterrors%2FApparently-naming-your-repo-is-the-toughest-part.-Tambi%C3%A9n-esto-es-solo-una-plantilla.%2Fdiscusiones%20%2Fcategor%C3%ADas%2Fayuda-extranjera)%0A1.%20Comienza%20indicando%20el%20idioma%20del%20texto%20original.%0A2.%20Publique%20su%20texto%20original.%0A3.%20Indicar%20que%20sigue%20el%20texto%20autotraducido.%0A4.%20Publique%20el%20texto%20traducido.%0A6.%20Sea%20paciente.&op=translate)
-
-##### [English to Spanish](https://translate.google.com/?sl=en&tl=es&text=1.%20Write%20in%20your%20own%20language.%0A%09-%20Use%20full%20sentences.%20%0A%09%09-%20A%20full%20sentence%20include%20a%20subject%20and%20a%20predicate.%0A%09%09-%20A%20full%20sentence%20may%20include%20an%20object.%0A%09-%20Use%20simple%20sentences.%0A%09-%20Avoid%20pronouns.%0A2.%20Translate%20your%20text%20to%20English.%0A3.%20Translate%20back%20the%20English%20translation%20of%20your%20text%20to%20your%20own%20language.%0A4.%20Check%20if%20the%20translation%20matches%20the%20original.%0A%09-%20If%20the%20translation%20does%20not%20match%20the%20original%2C%20refrase%20the%20original%20sentences.%0A%09%09-%20Go%20to%202.%0A%09-%20If%20the%20translation%20matches%20the%20original%2C%20then%20post%20both.%0A%09%09-%20Go%20to%205.%0A5.%20%5BPost%20your%20message.%5D(https%3A%2F%2Fgithub.com%2Fnighterrors%2FApparently-naming-your-repo-is-the-toughest-part.-Also-this-is-just-a-template.%2Fdiscussions%2Fcategories%2Fforeign-help)%0A%091.%20Start%20by%20indicating%20the%20original%20text%27s%20language.%0A%092.%20Post%20your%20original%20text.%0A%093.%20Indicate%20that%20the%20auto-translated%20text%20follows.%0A%094.%20Post%20the%20translated%20text.%0A6.%20Be%20patient.&op=translate)
-
-##### Post:
-
-```
-# ES
-
-1. Escriba en su propio idioma.
-	- Utilizar oraciones completas.
-	- Una oración completa incluye un sujeto y un predicado.
-	- Una oración completa puede incluir un objeto.
-	- Usar oraciones simples.
-	- Evita los pronombres.
-2. Traduce tu texto al inglés.
-3. Vuelva a traducir la traducción al inglés de su texto a su propio idioma.
-4. Compruebe si la traducción coincide con el original.
-	- Si la traducción no coincide con el original, reformule las oraciones originales.
-		- Ir a 2.
-	- Si la traducción coincide con el original, publique ambos.
-		- Ir a 5.
-5. [Publique su mensaje.](https://github.com/nighterrors/Apparently-naming-your-repo-is-the-toughest-part.-También-esto-es-solo-una-plantilla./discusiones /categorías/ayuda-extranjera)
-	1. Comienza indicando el idioma del texto original.
-	2. Publique su texto original.
-	3. Indicar que sigue el texto autotraducido.
-	4. Publique el texto traducido.
-6. Sea paciente.
-
-# EN --AUTOTRANSLATED--
-
-1. Write in your own language.
-	- Use complete sentences.
-	- A complete sentence includes a subject and a predicate.
-	- A complete sentence can include an object.
-	- Use simple sentences.
-	- Avoid pronouns.
-2. Translate your text into English.
-3. Re-translate the English translation of your text into your own language.
-4. Check if the translation matches the original.
-	- If the translation does not match the original, rephrase the original sentences.
-		- Go to 2.
-	- If the translation matches the original, post both.
-		- Go to 5.
-5. [Post your message.](https://github.com/nighterrors/Apparently-naming-your-repo-is-the-toughest-part.-also-this-is-just-a-template./discussions /categories/foreign-aid)
-	1. Start by indicating the language of the original text.
-	2. Post your original text.
-	3. Indicate that the auto-translated text follows.
-	4. Post the translated text.
-6. Be patient.
-```
----
-
-
-
-### If you *do* speak English
-
-- Start with the [documentation](). <!--TODO-->
-- Look around in the [forum](). <!--TODO-->
-	- If there <!--TODO-->
-
-### Documentation <!--TODO-->
-
-[Wiki](https://github.com/nighterrors/Apparently-naming-your-repo-is-the-toughest-part.-Also-this-is-just-a-template./wiki)
-
---=Spoiler: It's empty.=--
-
-### Forum <!--TODO-->
-
-[Forum](https://github.com/nighterrors/Apparently-naming-your-repo-is-the-toughest-part.-Also-this-is-just-a-template./discussions)
+1. Start with the [documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
+2. Look around in the [forum Q&amp;A](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
+	1. Hopfully there's already an answer for your question.
+	2. If there isn't, but at least someone else has asked the same question, please **bump** theirs, as opening a new thread will only decrease both of y'all chanses of getting an answer.
+	3. However, if your question is brand new, then by all means, open a new thread and ask away! Surly, someone will find a solution! - Eventually.
 
 ## Opening Issues <!--TODO-->
 
-- Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/[RepoGoesHere]/issues?q=is%3Aissue)!
+Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue)!
 
-- If you found a [bug](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D)
-- Have a [suggestion](https://github.com/nighterrors/[RepoGoesHere]/issues/new?assignees=&labels=&template=suggestion.md&title=%5BIMP%5D)
+- Please [report bugs](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=bug&template=bug_report.md&title=%3CBUG%3E+) &lt;- there!
+	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors)!**<sup id="AiRepoOwner"><a title="They should have published a way of contacting them on their profile." href="#FiRepoOwner">[0]</a></sup>
+- If you have a [suggestion](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=&template=suggestion.md&title=%3CIMP%3E+), do not hesitate to tell us! We literally thrive on feedback and especially constructive criticism! (No sarcasm intended.)
 
-## Contributing <!--TODO-->
+<dl>
+	<dt id="FiRepoOwner">0 <a title="Report security issues" href="AiRepoOwner">^</a> 
 
-See: <!--TODO-->
+## Contributing
 
-## Licence <!--TODO-->
+See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CONTRIBUTING.md)
 
-See: <!--TODO-->
+## Licence
+
+See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE)
