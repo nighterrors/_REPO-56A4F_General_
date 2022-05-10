@@ -8,7 +8,8 @@
 	- Bug report
 	- Feature request
 ]]
-[[Planned content:
+[[
+Planned content:
 - Expansion of CONTRIBUTING.md with more coding guidlines for:
 	- CSS
 	- JS
@@ -20,7 +21,8 @@
 - Folder hierarchy (if that prooves to be useful)
 - *A script of some sort, that automagically sets up a repo that was based on this template.*
 ]]
-[[Not going to include:
+[[
+Not going to include:
 - LICENSE.md - Since that would be inherited too AFAIK, which might not be desirable.
 ]]
 
@@ -52,7 +54,8 @@ See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wik
 3. ???
 4. Profit.
 ]]
-[[This repo comes with 3 branches:
+[[
+This repo comes with 3 branches:
 1. `Dev` - For active develoopment
 2. `Testing` - You've guessd it, for testing
 3. `main` - For releases.
@@ -94,8 +97,8 @@ Before opening a new ticket, please [check if there's already one](https://githu
 See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CONTRIBUTING.md)
 
 ## Licence
-[[The template comes with [WTFPL-v2](https://spdx.org/licenses/WTFPL.html). Repos based on this template can have their on licences without any limitation.]]
+[[The template comes with [WTFPL-v2](https://spdx.org/licenses/WTFPL.html#licenseText). Repos based on this template can have their on licences without any limitation.]]
 
 See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE)
 
-<span font-family: monospace>Based on this [template](https://github.com/nighterrors/_REPO-56A4F_General_) by @nighterrors.</span>
+<span font-family: monospace>Based on this [template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)</span>
