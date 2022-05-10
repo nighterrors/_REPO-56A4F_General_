@@ -4,6 +4,7 @@
 
 ## Purpose of this Repo
 
+<?>This is a general purpose template repo, with potential customization capabilities (customization not implemented yet).</?>
 <?>@Purpose<?/?>
 
 ## Community Standards
