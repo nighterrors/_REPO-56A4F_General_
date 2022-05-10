@@ -27,7 +27,7 @@
 {:toc}
 
 ## Getting [[@It]]
-[[Basically you can just [clone it]()]]
+[[Basically you can just [clone it](https://github.com/nighterrors/_REPO-56A4F_General_.git)]]
 
 See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
 [[Spoiler: It's empty. - This is just a template after all.]]
@@ -45,7 +45,7 @@ See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wik
 ## Using [[@It]]
 [[@HowToUse]]
 [[
-1. [Create a repo based on this template.]()
+1. [Create a repo based on this template.](https://github.com/nighterrors/_REPO-56A4F_General_/generate)
 2. Replace text in double brackets with your content.
 	- Except the ones in the isue templates!
 	- Perhaps there will be a script, that automates this process to some extent. (`@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize. The name was chosen so that it's easy to capture and replace.)
@@ -67,7 +67,7 @@ Before interacting with our community, please take a moment and read our [commun
 [[Spoiler: Tere are none:( - This is just a template, remember?]]
 
 ## Getting help
-[[If you need help with this template, head to the [forum's Q&A section]()!]]
+[[If you need help with this template, head to the [forum's Q&A section](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a)!]]
 
 1. Start with the [documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
 2. Look around in the [forum Q&amp;A](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
@@ -98,4 +98,4 @@ See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/mai
 
 See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE)
 
-<span font-family: monospace>Based on this [template]() by @nighterrors.</span>
+<span font-family: monospace>Based on this [template](https://github.com/nighterrors/_REPO-56A4F_General_) by @nighterrors.</span>

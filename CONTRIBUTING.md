@@ -246,7 +246,8 @@ See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General
 
 PRs are allways wellcome as long as they adhere to the [coding guidelines](# Coding Style)
 
-
-1. Development happens on the [`Dev`]() branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`Testing`](), where the testing takes place.
-3. Once all tests are passed, it's merged into [`main`](), thus concluding that phase.
+[[
+1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
+2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
+3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
+]]
