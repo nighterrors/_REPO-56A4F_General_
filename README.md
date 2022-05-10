@@ -98,7 +98,7 @@ Before opening a new ticket, please [check if there's already one](https://githu
 
 <details><summary>Expand / collapse note</summary>
 <dl>
-	<dt id="FiRepoOwner">1 <a title="Report security issues" href="AiRepoOwner">^</a> Contact</dt>
+	<dt id="FiRepoOwner">1 <a title="Report security issues" href="#AiRepoOwner">^</a> Contact</dt>
 	<dd>A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.</dd>
 </dl>
 </details>
@@ -108,7 +108,9 @@ Before opening a new ticket, please [check if there's already one](https://githu
 See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CONTRIBUTING.md)
 
 ## Licence
-<?>The template comes with [WTFPL-v2](https://spdx.org/licenses/WTFPL.html#licenseText). Repos based on this template can have their on licences without any limitation.<?/?>
+<?>
+The template comes with [WTFPL-v2](https://spdx.org/licenses/WTFPL.html#licenseText). Repos based on this template can have their own licences without any limitation.
+<?/?>
 
 See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE)
 
