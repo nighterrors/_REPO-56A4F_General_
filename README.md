@@ -1,6 +1,7 @@
-# <?>@Title<?/?>
-<?>@IntroRm<?/?>
+# <?>@Title<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
+
 <?>This is a general purpose repo template.<?/?>
+<?>@IntroRm<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 <?>
 Currently includes the following:
 - A README.md
@@ -29,10 +30,12 @@ Not going to include:
 
 {:toc}
 
-## Getting <?>@It<?/?>
+## Getting <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 <?>
 Basically you can just [clone it](https://github.com/nighterrors/_REPO-56A4F_General_.git)
 <?/?>
+
+<?>@HowToGet<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 
 See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
 <?>Spoiler: It's empty. - This is just a template after all.<?/?>
@@ -40,19 +43,21 @@ See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wik
 ### Installation
 <?>No need to install it.<?/?>
 
-<?>@HowToInstall<?/?>
+<?>@HowToInstall<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 
 ### Building it from source
 <?>There's nothing to build here.<?/?>
 
-<?>@HowToBuild<?/?>
+<?>@HowToBuild<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 
-## Using <?>@It<?/?>
-<?>@HowToUse<?/?>
+## Using <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
+<?>@HowToUse<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 <?>
 1. [Create a repo based on this template.](https://github.com/nighterrors/_REPO-56A4F_General_/generate)
 2. **Replace *text between `<?>` and `<?/?>` marks* with your content.**
-	- Perhaps there will be a script, that automates this process to some extent. (`@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize. The name was chosen so that it's easy to capture and replace.)
+	- Perhaps there will be a script, that automates this process to some extent.
+	- <span id="KeyWord">\[0\]: `@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize.</span>
+	- The repo's name was chosen so that it's easy to capture and replace.
 3. ???
 4. Profit.
 <?/?>
@@ -72,7 +77,9 @@ Before interacting with our community, please take a moment and read our [commun
 <?>Spoiler: Tere are none:( - This is just a template, remember?<?/?>
 
 ## Getting help
-<?>If you need help with this template, head to the [forum's Q&A section](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a)!<?/?>
+<?>
+If you need help with this template, head to the [forum's Q&A section](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a)!
+<?/?>
 
 1. Start with the [documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
 2. Look around in the [forum Q&amp;A](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
@@ -86,13 +93,15 @@ Before interacting with our community, please take a moment and read our [commun
 Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue)!
 
 - Please [report bugs](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=bug&template=bug_report.md&title=%3CBUG%3E+) &lt;- there!
-	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors)!**<sup id="AiRepoOwner"><a title="They should have published a way of contacting them on their profile." href="#FiRepoOwner">[0]</a></sup> <!--TODO-->
+	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors)!**<sup id="AiRepoOwner"><a title="They should publish a way of contacting them on their profile." href="#FiRepoOwner">[1]</a></sup>
 - If you have a [suggestion or idea](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=&template=suggestion.md&title=%3CIMP%3E+), do not hesitate to tell us! We literally thrive on feedback and especially constructive criticism! (No sarcasm intended.)
 
-<dl> <!--TODO-->
-	<dt id="FiRepoOwner">0 <a title="Report security issues" href="AiRepoOwner">^</a> Contact</dt>
-	<dd></dd>
+<details><summary>Expand / collapse note</summary>
+<dl>
+	<dt id="FiRepoOwner">1 <a title="Report security issues" href="AiRepoOwner">^</a> Contact</dt>
+	<dd>A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.</dd>
 </dl>
+</details>
 
 ## Contributing
 
@@ -103,4 +112,6 @@ See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/mai
 
 See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE)
 
-<span font-family: monospace>Based on this [template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)</span>
+<?>Spoiler: There's no licence file in the template, so repos based on it won't get accidentally left with the repo's licence.</?>
+
+<span style="font-family:monospace;">Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)</span>
