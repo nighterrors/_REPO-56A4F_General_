@@ -1,15 +1,15 @@
 # Contributing
 
-[[@IntroCb]]
+<?>@IntroCb<?/?>
 
 ## Purpose of this Repo
 
-[[@Purpose]]
+<?>@Purpose<?/?>
 
 ## Community Standards
 
 See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)
-[[Spoiler: Tere are none:( - This is just a template, after all.]]
+<?>Spoiler: Tere are none:( - This is just a template, after all.<?/?>
 
 ## Forum <!--TODO-->
 
@@ -244,10 +244,10 @@ See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General
 
 ## Pull Requests
 
-PRs are allways wellcome as long as they adhere to the [coding guidelines](# Coding Style)
+PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)
 
-[[
+<?>
 1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
 2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
 3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
-]]
+\<?/?>
