@@ -28,7 +28,9 @@ Not going to include:
 - LICENSE.md - Since that would be inherited too AFAIK, which might not be desirable.
 <?/?>
 
-{:toc}
+---
+
+<?>@ToC<?/?>
 
 ## Getting <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 <?>
