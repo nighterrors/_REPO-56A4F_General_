@@ -1,9 +1,14 @@
 # Contributing
 
-<?>@IntroCb<?/?>
+There are many ways to help out this project. Some require programming skills, but others don't. *Here topics are ordered by their required skill level.*
+
+---
+
+<?>@ToC<?/?> <!--TODO-->
 
 ## Purpose of this Repo
 
+<?>This is a general purpose template repo, with potential customization capabilities (customization not implemented yet).</?>
 <?>@Purpose<?/?>
 
 ## Community Standards
@@ -11,14 +16,44 @@
 See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)
 <?>Spoiler: Tere are none:( - This is just a template, after all.<?/?>
 
-## Forum <!--TODO-->
+## Forum
+
+*Doesn't require coding skills, just an understanding how it works is enough to help others how to use it.*
 
 - [Help out by answering questions](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
 - *[Especially if you are bilingual](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/foreign-help)!*
 
-## Documentation <!--TODO-->
+## Documentation
+
+*Under the hood documentation requires understanding the code, but usage instructions don't necessarily.*
 
 - [Help out by writing documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
+
+## Codebase
+
+*This definitely requires coding skills.*
+
+Before contributing to the codebase, please read our [coding guidelines](#Coding-Style)
+
+- See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue), you can help with.
+	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/labels/good%20first%20issue), just to see how you like it!
+	- Help us with our most [pressing issues](https://github.com/nighterrors/_REPO-56A4F_General_/labels/help%20wanted)!
+	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/labels/bug) are allways wellcome!
+	- Or maybe you'd like to [implement new features](https://github.com/nighterrors/_REPO-56A4F_General_/labels/enhancement)?
+
+*At any rate, please start by replying to the issue, **letting everyone know what you're working on, and planning to do**. Especially if you're new here!*
+
+### Pull Requests
+
+PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)
+
+<?>
+1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
+2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
+3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
+<?/?>
+
+---
 
 ## Coding Style
 
@@ -241,13 +276,3 @@ See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General
 </dl>
 
 </details>
-
-## Pull Requests
-
-PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)
-
-<?>
-1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
-3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
-<?/?>
