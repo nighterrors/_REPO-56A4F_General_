@@ -4,17 +4,27 @@ There are many ways to help out this project. Some require programming skills, b
 
 ---
 
-<?>@ToC<?/?> <!--TODO-->
+<?>
+@ToC
+<?/?>
 
 ## Purpose of this Repo
 
-<?>This is a general purpose template repo, with potential customization capabilities (customization not implemented yet).</?>
-<?>@Purpose<?/?>
+<?>
+This is a general purpose template repo, with potential customization capabilities (customization not implemented yet).
+<?/?>
+
+<?>
+@Purpose
+<?/?>
 
 ## Community Standards
 
-See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)
-<?>Spoiler: Tere are none:( - This is just a template, after all.<?/?>
+See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)!
+
+<?>
+Spoiler: Tere are none:( - This is just a template, after all.
+<?/?>
 
 ## Forum
 
@@ -33,7 +43,7 @@ See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General
 
 *This definitely requires coding skills.*
 
-Before contributing to the codebase, please read our [coding guidelines](#Coding-Style)
+Before contributing to the codebase, please read our [coding guidelines](#Coding-Style)!
 
 - See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue), you can help with.
 	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/labels/good%20first%20issue), just to see how you like it!
@@ -45,11 +55,11 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 ### Pull Requests
 
-PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)
+PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
 
 <?>
-1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
+1. Development happens on the [`dev-`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/dev-) branch. And occasionally on separate `Feature` branches.
+2. Once a phase is complete, it's merged into [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test), where the testing takes place.
 3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
 <?/?>
 
@@ -71,24 +81,24 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 #### General
 
 <ol start="0">
-<li><em>Indentation should reflect logical structure.</em><sup id="AgStructure"><a title="Duh." href="#FgStructure">[0]</a></sup></li>
-<li><strong><em>Use <kbd>tab</kbd> characters to indent lines!</em></strong><sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." href="#FgTabs">[1]</a></sup></li>
-<li><strong>Comments should start at the same indent as the line they belong to.</strong><sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." href="#FgCommentAtSameIndent">[2]</a></sup></li>
-<li><em>Prefer descriptive names over explanations.</em><sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." href="#FgDescriptiveNames">[3]</a></sup></li>
-<li><em>But describe what needs to be in comments.</em><sup id="AgAddDescriptions"><a title="This helps understand the code that was written a long time ago. But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers. Also quite invaluable in debugging. So please explain what each block of code supposed to do!" href="#FgAddDescriptions">[4]</a><sup></li>
-<li><em>Use comments to further structure your code</em> by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." href="#FgSections">[5]</a></sup></li>
+<li><em>Indentation should reflect logical structure.</em><sup id="AgStructure"><a title="Duh." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgStructure">[0]</a></sup></li>
+<li><strong><em>Use <kbd>tab</kbd> characters to indent lines!</em></strong><sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgTabs">[1]</a></sup></li>
+<li><strong>Comments should start at the same indent as the line they belong to.</strong><sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgCommentAtSameIndent">[2]</a></sup></li>
+<li><em>Prefer descriptive names over explanations.</em><sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgDescriptiveNames">[3]</a></sup></li>
+<li><em>But describe what needs to be in comments.</em><sup id="AgAddDescriptions"><a title="This helps understand the code that was written a long time ago. But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers. Also quite invaluable in debugging. So please explain what each block of code supposed to do!" onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgAddDescriptions">[4]</a><sup></li>
+<li><em>Use comments to further structure your code</em> by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgSections">[5]</a></sup></li>
 </ol>
 
 #### HTML
 
 <ol start="6">
-<li><strong>Close self-closing elements with <code> /&gt;</code>.</strong><sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside></li>
-<li><strong>Booleans in HTML should be in short form.</strong><sup id="AhBooleanAttributes"><a title="To improve readability." href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: ✅<code>defer</code> instead of ❌<code>defer=true</code>.</aside></li>
-<li><strong>Attribute values should always be quoted.</strong><sup id="AhStringAttributeValues"><a title="For XML compatibility. And to avoid errors." href="#FhStringAttributeValues">[8]</a></sup></li>
-<li><strong>Use single quote <code>'</code> for well known keywords.</strong><sup id="AhSingleQuoteKeyWords"><a title="To help distinguish them." href="#FhSingleQuoteKeyWords">[9]</a></sup><br /><aside>E.g.: <code>&lt;html lang='en' &gt;</code>.</aside></li>
-<li><strong>But double quotes <code>"</code> for arbitrary strings.</strong><sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: <code>&lt;a href="github.com" &gt;</code>.</aside></li>
-<li><strong>Tags, attributes and keywords should be lowercase.</strong><sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: <code>&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;</code></li>
-<li><strong>Attribute order:</strong><sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.</li>
+<li><strong>Close self-closing elements with <code> /&gt;</code>.</strong><sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside></li>
+<li><strong>Booleans in HTML should be in short form.</strong><sup id="AhBooleanAttributes"><a title="To improve readability." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: ✅<code>defer</code> instead of ❌<code>defer=true</code>.</aside></li>
+<li><strong>Attribute values should always be quoted.</strong><sup id="AhStringAttributeValues"><a title="For XML compatibility. And to avoid errors." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhStringAttributeValues">[8]</a></sup></li>
+<li><strong>Use single quote <code>'</code> for well known keywords.</strong><sup id="AhSingleQuoteKeyWords"><a title="To help distinguish them." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhSingleQuoteKeyWords">[9]</a></sup><br /><aside>E.g.: <code>&lt;html lang='en' &gt;</code>.</aside></li>
+<li><strong>But double quotes <code>"</code> for arbitrary strings.</strong><sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: <code>&lt;a href="github.com" &gt;</code>.</aside></li>
+<li><strong>Tags, attributes and keywords should be lowercase.</strong><sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: <code>&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;</code>.</li>
+<li><strong>Attribute order:</strong><sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.</li>
 	<ol>
 		<li>Class</li>
 		<li>ID</li>
@@ -110,8 +120,8 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 ##### Naming convention
 
 <ol start="14">
-<li><strong>Use CapitalCamelCase for custom stuff.</strong><sup id="AjCapitalCamelCase"><a title="Makes them clearly distinguishable from built-ins." href="#FjCapitalCamelCase">[14]</a></sup></li>
-<li><strong>The first two letters of the name are reserved for classification</strong><sup id="AjClassification"><a title="Helps to identify objects and their purpose. Thus helping with 3^, by providing a shorthand description of type and possibly content. Helps ensure 14^." href="#FjClassification">[15]</a></sup>:</li>
+<li><strong>Use CapitalCamelCase for custom stuff.</strong><sup id="AjCapitalCamelCase"><a title="Makes them clearly distinguishable from built-ins." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjCapitalCamelCase">[13]</a></sup></li>
+<li><strong>The first two letters of the name are reserved for classification</strong><sup id="AjClassification"><a title="Helps to identify objects and their purpose. Thus helping with 3^, by providing a shorthand description of type and possibly content. Helps ensure 14^." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjClassification">[14]</a></sup>:</li>
 </ol>
 
 <table>
@@ -207,7 +217,7 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 
 ### Rationale
 
-<details markdown><summary>Expand / Collapse</summary>
+<details markdown open><summary>Expand / Collapse notes</summary>
 
 #### General
 
@@ -265,9 +275,9 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 ##### Naming convention
 
 <dl>
-	<dt id="FjCapitalCamelCase">14 <a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a> CapitalCamelCase:</dt>
+	<dt id="FjCapitalCamelCase">13 <a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a> CapitalCamelCase:</dt>
 		<dd>Makes them clearly distinguishable from built-ins.</dd>
-	<dt id="FjClassification">15 <a title="Classification" href="#AjClassification">^</a> Classification:</dt>
+	<dt id="FjClassification">14 <a title="Classification" href="#AjClassification">^</a> Classification:</dt>
 		<dd>Helps to identify objects and their purpose.</dd>
 		<dd>Thus helping with 3<a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a>, by providing a shorthand description of type and possibly content.</dd>
 		<dd>Helps ensure 14<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.</dd>
