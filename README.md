@@ -96,8 +96,8 @@ There's nothing to build here.
 
 <?>
 This repo comes with 3 branches:
-1. `Dev` - For active develoopment.
-2. `Testing` - You've guessd it, for testing.
+1. `dev-` - For active develoopment.
+2. `test` - You've guessd it, for testing.
 3. `main` - For releases.
 <?/?>
 

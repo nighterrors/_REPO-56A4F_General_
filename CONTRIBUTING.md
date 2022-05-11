@@ -58,8 +58,8 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
 
 <?>
-1. Development happens on the [`Dev`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Dev) branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`Testing`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/Testing), where the testing takes place.
+1. Development happens on the [`dev-`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/dev-) branch. And occasionally on separate `Feature` branches.
+2. Once a phase is complete, it's merged into [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test), where the testing takes place.
 3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
 <?/?>
 
