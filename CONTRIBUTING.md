@@ -99,7 +99,7 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 <li><strong>But double quotes <code>"</code> for arbitrary strings.</strong><sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: <code>&lt;a href="github.com" &gt;</code>.</aside></li>
 <li><strong>Tags, attributes and keywords should be lowercase.</strong><sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: <code>&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;</code>.</li>
 <li><strong>Attribute order:</strong><sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.</li>
-	<ol>
+	<ol type="I">
 		<li>Class</li>
 		<li>ID</li>
 		<li>Title</li>
