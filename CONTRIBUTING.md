@@ -119,7 +119,7 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 
 ##### Naming convention
 
-<ol start="14">
+<ol start="13">
 <li><strong>Use CapitalCamelCase for custom stuff.</strong><sup id="AjCapitalCamelCase"><a title="Makes them clearly distinguishable from built-ins." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjCapitalCamelCase">[13]</a></sup></li>
 <li><strong>The first two letters of the name are reserved for classification</strong><sup id="AjClassification"><a title="Helps to identify objects and their purpose. Thus helping with 3^, by providing a shorthand description of type and possibly content. Helps ensure 14^." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjClassification">[14]</a></sup>:</li>
 </ol>
@@ -280,7 +280,7 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 	<dt id="FjClassification">14 <a title="Classification" href="#AjClassification">^</a> Classification:</dt>
 		<dd>Helps to identify objects and their purpose.</dd>
 		<dd>Thus helping with 3<a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a>, by providing a shorthand description of type and possibly content.</dd>
-		<dd>Helps ensure 14<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.</dd>
+		<dd>Helps ensure 13<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.</dd>
 	<!--dt id="Fj">16 <a title="" href="#Aj">^</a> </dt>
 		<dd> </dd-->
 </dl>
