@@ -95,10 +95,15 @@ There's nothing to build here.
 <?/?>
 
 <?>
-This repo comes with 3 branches:
-1. `dev-` - For active develoopment.
-2. `test` - You've guessd it, for testing.
-3. `main` - For releases.
+This repo comes with 3 major branches:
+1. `main` - For active develoopment. *Merges into `test`.*
+2. `test` - You've guessd it, for testing. *Merges into `prod`.*
+3. `prod` - For releases.
+
+And 3 types of side branches are supported:
+- `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
+- `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test`.*
+- `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
 <?/?>
 
 See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
