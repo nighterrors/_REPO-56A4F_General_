@@ -57,10 +57,73 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
 
+Also please follow our [branch hierarchy](#branch-hierarchy)!
+
+### Branch Hierarchy
+
 <?>
-1. Development happens on the [`dev-`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/dev-) branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test), where the testing takes place.
-3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
+This repo comes with 3 major branches:
+1. [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main) - For active develoopment. *Merges into `test`.*
+2. [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test) - For testing. *Merges into `prod`.*
+3. [`prod`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod) - For releases.
+
+And 3 types of side branches:
+- `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
+- `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test`.*
+- `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
+<?/?>
+
+```mermaid
+graph LR
+
+feat/some_feature --> main
+feat/some_other_feature --> main
+feat/some_feature --> bgfx/#id1
+bgfx/#id1 --> main
+
+main --> test
+main --> bgfx/#id2
+bgfx/#id2 --> test
+
+test --> prod
+htfx/#id3 --> prod
+```
+
+#### Workflow
+
+<?>
+1. Development happens on separate *Feature* branches (`feat/[feature's name]`).
+2. Once a feature is complete, it's merged into `main`. 
+3. When a development phase is complete, `main` is merged into `test`, where the testing takes place.
+4. Once all tests are passed, `test` merged into the default branch: `prod`, thus concluding that phase.
+
+```puml
+@startuml
+
+feat_a_b -> main
+main -> test
+main -> test
+test -> prod
+
+@enduml
+```
+
+```puml
+@startuml
+
+feat_c_d_e -> main
+main -> test
+test -> prod
+
+@enduml
+```
+
+-	Bug fixes branch out from wherever they were discovered and merged into either:
+	-	`main` if they were discovered during development phase;
+	-	Also `main` if the fix will be part of the next `major` or `minor` realease.
+	-	or `test` if it'll be part of a `patch` release.
+-	Hot fixes similar to bug fixes have their independent branches. But unlike the former they -after careful testing- merge directly into `prod`.
+
 <?/?>
 
 ---
