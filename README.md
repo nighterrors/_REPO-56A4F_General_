@@ -5,7 +5,7 @@ This is a general purpose repo template.
 <?/?>
 
 <?>
-@IntroRm<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@IntroRm<a title="Usage" href="#KeyWord">^[0]^</a>
 <?/?>
 
 <?>
@@ -13,8 +13,8 @@ Currently includes the following:
 - A README.md
 - A CONTRIBUTING.md
 - Issue templates for:
-	- Bug report
-	- Feature request
+	- [Bug report](/.github/ISSUE_TEMPLATE/bug_report.md "bug report template")
+	- [Feature request](/.github/ISSUE_TEMPLATE/suggestion.md "suggestion template")
 <?/?>
 
 <?>
@@ -65,7 +65,7 @@ No need to install it.
 <?/?>
 
 <?>
-@HowToInstall<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToInstall<a title="Usage" href="#KeyWord">^[0]^</a>
 <?/?>
 
 ### Building it from source
@@ -75,13 +75,13 @@ There's nothing to build here.
 <?/?>
 
 <?>
-@HowToBuild<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToBuild<a title="Usage" href="#KeyWord">^[0]^</a>
 <?/?>
 
 ## Using <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
 
 <?>
-@HowToUse<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToUse<a title="Usage" href="#KeyWord">^[0]^</a>
 <?/?>
 
 <?>
@@ -145,10 +145,10 @@ Before opening a new ticket, please [check if there's already one](https://githu
 - If you have a [suggestion or idea](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=&template=suggestion.md&title=%3CIMP%3E+), do not hesitate to tell us! We literally thrive on feedback and especially constructive criticism! (No sarcasm intended.)
 
 <details markdown open><summary>Expand / Collapse note</summary>
-<dl>
-	<dt id="FiRepoOwner">1 <a title="Report security issues" href="#AiRepoOwner">^</a> Contact:</dt>
-	<dd>A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.</dd>
-</dl>
+
+1 <a title="Report security issues" href="#AiRepoOwner">^</a> Contact:
+	:	A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.
+
 </details>
 
 ## Contributing

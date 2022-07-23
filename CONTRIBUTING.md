@@ -80,150 +80,109 @@ PRs are allways wellcome as long as they adhere to the [coding guidelines](#Codi
 
 #### General
 
-0. *Indentation should reflect logical structure.*<sup id="AgStructure"><a title="Duh." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgStructure">[0]</a></sup>
-
-0. ***Use <kbd>tab</kbd> characters to indent lines!*** <sup id="AgTabs"><a title="Tabs are flexible. Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it. Using tabs saves you at least 1 B per character;) I haven't found any -good- reason not to." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgTabs">[1]</a></sup>
-
-0. **Comments should start at the same indent as the line they belong to.**<sup id="AgCommentAtSameIndent"><a title="It looks nice and structured." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgCommentAtSameIndent">[2]</a></sup>
-
-0. *Prefer descriptive names over explanations.*<sup id="AgDescriptiveNames"><a title="It'll help remebering what it does, without having to find where it was explained. It'll also help others better understand the code." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgDescriptiveNames">[3]</a></sup>
-
-0. *But describe what needs to be in comments.*<sup id="AgAddDescriptions"><a title="This helps understand the code that was written a long time ago. But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers. Also quite invaluable in debugging. So please explain what each block of code supposed to do!" onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgAddDescriptions">[4]</a><sup>
-
-0. *Use comments to further structure your code* by adding titles to sections.<sup id="AgSections"><a title="Helps readability and finding relevant parts of the code." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FgSections">[5]</a></sup>
-
-#### HTML
-
-6. **Close self-closing elements with ` /&gt;`.**<sup id="AhSpaceSlashCloseEmptyElements"><a title="For XML compatibility." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhSpaceSlashCloseEmptyElements">[6]</a></sup><br /><aside>As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.</aside>
-
-6. **Booleans in HTML should be in short form.**<sup id="AhBooleanAttributes"><a title="To improve readability." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhBooleanAttributes">[7]</a></sup><br /><aside>E.g.: ✅`defer` instead of ❌`defer=true`.</aside>
-
-6. **Attribute values should always be quoted.**<sup id="AhStringAttributeValues"><a title="For XML compatibility. And to avoid errors." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhStringAttributeValues">[8]</a></sup>
-
-6. **Use single quote `'` for well known keywords.**<sup id="AhSingleQuoteKeyWords"><a title="To help distinguish them." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhSingleQuoteKeyWords">[9]</a></sup><br /><aside>E.g.: `&lt;html lang='en' &gt;`.</aside>
-
-6. **But double quotes `"` for arbitrary strings.**<sup id="AhDoubleQuoteStrings"><a title="To help distinguish keywords from." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhDoubleQuoteStrings">[10]</a></sup><br /><aside>E.g.: `&lt;a href="github.com" &gt;`.</aside>
-
-6. **Tags, attributes and keywords should be lowercase.**<sup id="AhLowercaseKeywords"><a title="To help distinguish text intended for humans vs. machines." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhLowercaseKeywords">[11]</a></sup><br />All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..<br /><aside>E.g.: `&lt;link rel='icon' type='image/icon' href="favicon.ico" /&gt;`.
-
-6. **Attribute order:**<sup id="AhAttributeOrder"><a title="It helps finding relevant parts of tags with a lot of attributes. Keeps things nice and organized." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FhAttributeOrder">[12]</a></sup><br />From left to right: IDs from more general to the most specific.<br />Leftmost: Most important attribute.
-
-	1. Class
-	1. ID
-	1. Title
-	1. ... Others ...
-	1. Booleans
-	1. Link (`href`, `src`, etc.)
-
-#### CSS
-
-<!--TODO-->
-
-#### JS
-
-<!--TODO-->
-
-##### Naming convention
-
-13. **Use CapitalCamelCase for custom stuff.**<sup id="AjCapitalCamelCase"><a title="Makes them clearly distinguishable from built-ins." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjCapitalCamelCase">[13]</a></sup>
-
-13. **The first two letters of the name are reserved for classification**<sup id="AjClassification"><a title="Helps to identify objects and their purpose. Thus helping with 3^, by providing a shorthand description of type and possibly content. Helps ensure 14^." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FjClassification">[14]</a></sup>:
-
-|First letter|type of object                                              |
-|:--:        |--                                                          |
-|F           |Function                                                    |
-|C           |Constant                                                    |
-|L           |Variable declared with `let`                                |
-|I           |Variable declared implicitly (such as a function's argument)|
-|V           |Variable declared with `var`                                |
-|K           |Key in a dictionary                                         |
-|P           |Class                                                       |
-|D           |Field                                                       |
-|M           |Method                                                      |
-
-|Second letter|type of data it holds / returns                       |
-|:--:         |--                                                    |
-|n            |None (e.g. when a function doesn't have return value) |
-|b            |Boolean                                               |
-|i            |Integer                                               |
-|f            |Float                                                 |
-|s            |String                                                |
-|a            |Array                                                 |
-|o            |Object                                                |
-|v            |Variant (if it's unknown, or can have different types)|
-
-### Rationale
-
-<details markdown open><summary>Expand / Collapse notes</summary>
-
-#### General
-
-0 <a title="Structure" href="#AgStructure">^</a> Structure:
+0. *Indentation should reflect logical structure.*
 	:	Duh.
 
-1 <a title="Tabs" href="#AgTabs">^</a> Tabs:
-	:	<b>Tabs are flexible.</b> Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.
+0. ***Use <kbd>tab</kbd> characters to indent lines!***
+	:	**Tabs are flexible.** Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.
 	:	Using tabs saves you at least 1 B per character;)
 	:	I haven't found any -good- reason not to.
 
-2 <a title="Indent comments" href="#AgCommentAtSameIndent">^</a> Indent comments:
+0. **Comments should start at the same indent as the line they belong to.**
 	:	It looks nice and structured.
 
-3 <a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a> Descriptive names:
+0. *Prefer descriptive names over explanations.*
 	:	It'll help remebering what it does, without having to find where it was explained.
 	:	It'll also help others better understand the code.
 
-4 <a title="Explain your code!" href="#AgAddDescriptions">^</a> Explain:
+0. *But describe what needs to be in comments.*
 	:	This helps understand the code that was written a long time ago.
 	:	But also helps others, who would like to collaborate or just having issues with the code. Especially if they aren't programmers.
 	:	Also quite invaluable in debugging.
 	:	*So please explain what each block of code supposed to do!*
 
-5 <a title="Sections" href="#AgSections">^</a> Sections:
+0. *Use comments to further structure your code* by adding titles to sections.
 	:	Helps readability and finding relevant parts of the code.
 
 #### HTML
 
-6 <a title="Self-closing elements" href="#AhSpaceSlashCloseEmptyElements">^</a> Self-closing elements:
+6. **Close self-closing elements with ` />`.**
 	:	For XML compatibility.
+	>	As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.
 
-7 <a title="Boolean attributes" href="#AhBooleanAttributes">^</a> Boolean attributes:
+6. **Booleans in HTML should be in short form.**
 	:	To improve readability.
+	>	E.g.: ✅`defer` instead of ❌`defer=true`.
 
-8 <a title="Quote attribute values" href="#AhStringAttributeValues">^</a> Quote attribute values:
+6. **Attribute values should always be quoted.**
 	:	For XML compatibility.
 	:	And to avoid errors.
 
-9 <a title="Single quote keywords" href="#AhSingleQuoteKeyWords">^</a> Single quote keywords:
+6. **Use single quote `'` for well known keywords.**
 	:	To help distinguish them.
+	>	E.g.: `<html lang='en' >`.
 
-10 <a title="Double quote strings" href="#AhDoubleQuoteStrings">^</a> Double quote strings:
+6. **But double quotes `"` for arbitrary strings.**
 	:	To help distinguish keywords from.
+	>	E.g.: `<a href="github.com" >`.
 
-11 <a title="Lowercase keywords" href="#AhLowercaseKeywords">^</a> Lowercase keywords:
+6. **Tags, attributes and keywords should be lowercase.**
 	:	To help distinguish text intended for humans vs. machines.
+	>	All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..
+	>	E.g.: `<link rel='icon' type='image/icon' href="favicon.ico" />`.
 
-12 <a title="Attribute order" href="#AhAttributeOrder">^</a> Attribute order:
+6. **Attribute order:**
 	:	It helps finding relevant parts of tags with a lot of attributes.
 	:	Keeps things nice and organized.
 
+	1. Class
+	2. ID
+	3. Title
+	4. ... Others ...
+	5. Booleans
+	6. Link (`href`, `src`, etc.)
+
+	>	From left to right: IDs from more general to the most specific.
+	>	Leftmost: Most important attribute.
+
 #### CSS
 
-<!--dl>
-	<dt id="Fc">13 <a href="#Ac">^</a> </dt>
-		<dd></dd>
-</dl-->
+<!--TODO-->
 
 #### JS
 
+<!--TODO-->
+
 ##### Naming convention
 
-13 <a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a> CapitalCamelCase:
+13. **Use CapitalCamelCase for custom stuff.**
 	:	Makes them clearly distinguishable from built-ins.
 
-14 <a title="Classification" href="#AjClassification">^</a> Classification:
+13. **The first two letters of the name are reserved for classification**
 	:	Helps to identify objects and their purpose.
 	:	Thus helping with 3<a title="Add descriptive names to stuff" href="#AgDescriptiveNames">^</a>, by providing a shorthand description of type and possibly content.
 	:	Helps ensure 13<a title="CapitalCamelCase" href="#AjCapitalCamelCase">^</a>.
 
-</details>
+|First letter	|type of object													|
+|:--:			|--																|
+|F				|Function														|
+|C				|Constant														|
+|L				|Variable declared with `let`									|
+|I				|Variable declared implicitly (such as a function's argument)	|
+|V				|Variable declared with `var`									|
+|K				|Key in a dictionary											|
+|P				|Class															|
+|D				|Field															|
+|M				|Method															|
+
+|Second letter	|type of data it holds / returns								|
+|:--:			|--																|
+|- or _			|None (e.g. when a function doesn't have return value)			|
+|b				|Boolean														|
+|n				|General numeric value											|
+|i				|Integer														|
+|f				|Float															|
+|s				|String															|
+|a				|Array															|
+|o				|Object															|
+|v				|Variant (if it's unknown, or can have different types)			|
