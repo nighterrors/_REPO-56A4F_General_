@@ -73,20 +73,78 @@ And 3 types of side branches:
 - `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
 <?/?>
 
+Example:
+
 ```mermaid
-graph LR
+gitGraph
+commit
+branch test
+commit
+branch prod
 
-feat/some_feature --> main
-feat/some_other_feature --> main
-feat/some_feature --> bgfx/#id1
-bgfx/#id1 --> main
+checkout main
+commit
 
-main --> test
-main --> bgfx/#id2
-bgfx/#id2 --> test
+branch feat/some_feature
+commit
+commit
 
-test --> prod
-htfx/#id3 --> prod
+checkout main
+branch feat/some_other_feature
+commit
+
+checkout feat/some_feature
+commit
+
+checkout main
+merge feat/some_feature
+checkout main
+merge feat/some_other_feature
+
+checkout test
+merge main
+
+branch bgfx/0
+commit
+
+checkout test
+merge bgfx/0
+
+checkout prod
+merge test tag:"v1.0.0"
+
+branch bgfx/1
+commit
+
+branch htfx/1
+commit
+
+checkout prod
+branch feat/new_feature
+commit
+
+checkout prod
+merge htfx/1 tag:"v1.0.1"
+
+checkout bgfx/1
+commit
+
+checkout main
+merge bgfx/1
+
+checkout feat/new_feature
+commit
+commit
+
+checkout main
+merge feat/new_feature
+
+checkout test
+merge main
+
+checkout prod
+merge test tag:"v1.1.0"
+
 ```
 
 #### Workflow
@@ -96,27 +154,6 @@ htfx/#id3 --> prod
 2. Once a feature is complete, it's merged into `main`. 
 3. When a development phase is complete, `main` is merged into `test`, where the testing takes place.
 4. Once all tests are passed, `test` merged into the default branch: `prod`, thus concluding that phase.
-
-```puml
-@startuml
-
-feat_a_b -> main
-main -> test
-main -> test
-test -> prod
-
-@enduml
-```
-
-```puml
-@startuml
-
-feat_c_d_e -> main
-main -> test
-test -> prod
-
-@enduml
-```
 
 -	Bug fixes branch out from wherever they were discovered and merged into either:
 	-	`main` if they were discovered during development phase;
