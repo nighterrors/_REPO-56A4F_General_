@@ -360,7 +360,8 @@ merge test tag: "v1.5.0"
 
 	:	To improve readability.
 
-	>	E.g.: ✅`defer` instead of ❌`defer=true`.
+	!!! hint ""
+		E.g.: ✅`defer` instead of ❌`defer=true`.
 
 6. **Attribute values should always be quoted.**
 
@@ -372,20 +373,24 @@ merge test tag: "v1.5.0"
 
 	:	To help distinguish them.
 
-	>	E.g.: `<html lang='en' >`.
+	!!! hint ""
+		E.g.: `<html lang='en' >`.
 
 6. **But double quotes `"` for arbitrary strings.**
 
 	:	To help distinguish keywords from.
 
-	>	E.g.: `<a href="github.com" >`.
+	!!! hint ""
+		E.g.: `<a href="github.com" >`.
 
 6. **Tags, attributes and keywords should be lowercase.**
 
 	:	To help distinguish text intended for humans vs. machines.
 
 	>	All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..
-	>	E.g.: `<link rel='icon' type='image/icon' href="favicon.ico" />`.
+
+	!!! hint ""
+		E.g.: `<link rel='icon' type='image/icon' href="favicon.ico" />`.
 
 6. **Attribute order:**
 
@@ -400,8 +405,10 @@ merge test tag: "v1.5.0"
 	5. Booleans
 	6. Link (`href`, `src`, etc.)
 
-	>	From left to right: IDs from more general to the most specific.
-	>	Leftmost: Most important attribute.
+	!!! info ""
+		From left to right: IDs from more general to the most specific.
+	!!! info ""
+		Leftmost: Most important attribute.
 
 #### CSS
 
