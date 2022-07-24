@@ -115,14 +115,14 @@ And 3 types of side branches:
 -	Hot fixes similar to bug fixes have their independent branches. But unlike the former they -after careful testing- merge directly into `prod`, bumping the patch version.
 
 <style>
-b0	{ background-color:	rgb(121, 125, 125) }
-b1	{ background-color:	rgb(161,  34, 115) }
-b2	{ background-color:	rgb(106, 137, 147) }
-b3	{ background-color:	rgb(155,  92,  53) }
-b4	{ background-color:	rgb(204,  19,  19) }
-b5	{ background-color:	rgb(101,   0, 123) }
-b6	{ background-color:	rgb(204, 120,   1) }
-b7	{ background-color:	rgb( 49, 165,  14) }
+	b0	{ background-color:	rgb(121, 125, 125) }
+	b1	{ background-color:	rgb(161,  34, 115) }
+	b2	{ background-color:	rgb(106, 137, 147) }
+	b3	{ background-color:	rgb(155,  92,  53) }
+	b4	{ background-color:	rgb(204,  19,  19) }
+	b5	{ background-color:	rgb(101,   0, 123) }
+	b6	{ background-color:	rgb(204, 120,   1) }
+	b7	{ background-color:	rgb( 49, 165,  14) }
 </style>
 
 ##### Development Cycle Example

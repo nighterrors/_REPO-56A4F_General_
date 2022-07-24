@@ -181,9 +181,7 @@ See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LIC
 Spoiler: There's no licence file in the template, so repos based on it won't get accidentally left with the repo's licence.
 <?/?>
 
-!!! info ""
-
-	Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)
+>	Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)
 
 
-*[WTFPL]:	Do What The F*ck You Want To Public License
+*[WTFPL]:	Do What The Fuck You Want To Public License
