@@ -39,9 +39,27 @@ Not going to include:
 
 ---
 
+<?>@ToC<?/?>
 <?>
-@ToC
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [<?>@Title<?/?>^](#using-it "usage")<?/?>](#title0using-it-usage)
+  - [Getting <?>@It<?/?>^](#using-it "usage")<?/?>](#getting-it0using-it-usage)
+    - [Installation](#installation)
+    - [Building it from source](#building-it-from-source)
+  - [Using <?>@It<?/?>](#using-it)
+  - [Community Standards](#community-standards)
+  - [Getting help](#getting-help)
+  - [Opening Issues](#opening-issues)
+  - [Contributing](#contributing)
+  - [Licence](#licence)
+
+<!-- /code_chunk_output -->
 <?/?>
+
+---
 
 ## Getting <?>@It<?/?>[^[0]^](#using-it "usage")<?/?>
 
