@@ -4,9 +4,35 @@ There are many ways to help out this project. Some require programming skills, b
 
 ---
 
+## TOC
+
+<?>@TOC<?/?>
 <?>
-@ToC
+- [Contributing](#contributing)
+	- [TOC](#toc)
+	- [Purpose of this Repo](#purpose-of-this-repo)
+	- [Community Standards](#community-standards)
+	- [Forum](#forum)
+	- [Documentation](#documentation)
+	- [Codebase](#codebase)
+		- [Pull Requests](#pull-requests)
+		- [Branch Hierarchy](#branch-hierarchy)
+			- [Workflow](#workflow)
+				- [Development Cycle Example](#development-cycle-example)
+				- [Bugfix Examples](#bugfix-examples)
+				- [Hotfix Examples](#hotfix-examples)
+	- [Coding Style](#coding-style)
+		- [Based on](#based-on)
+			- [See also](#see-also)
+		- [Key rules](#key-rules)
+			- [General](#general)
+			- [HTML](#html)
+			- [CSS](#css)
+			- [JS](#js)
+				- [Naming convention](#naming-convention)
 <?/?>
+
+---
 
 ## Purpose of this Repo
 
@@ -57,10 +83,216 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
 
+Also please follow our [branch hierarchy](#branch-hierarchy)!
+
+### Branch Hierarchy
+
 <?>
-1. Development happens on the [`dev-`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/dev-) branch. And occasionally on separate `Feature` branches.
-2. Once a phase is complete, it's merged into [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test), where the testing takes place.
-3. Once all tests are passed, it's merged into the default branch: [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main), thus concluding that phase.
+This repo comes with 3 major branches:
+1. [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main) - For active develoopment. *Merges into `test`.*
+2. [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test) - For testing. *Merges into `prod`.*
+3. [`prod`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod) - For releases.
+
+And 3 types of side branches:
+- `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
+- `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test`.*
+- `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
+<?/?>
+
+
+#### Workflow
+
+<?>
+1. Development happens on separate *Feature* branches (`feat/[feature's name]`).
+2. Once a feature is complete, it's merged into `main`. 
+3. When a development phase is complete, `main` is merged into `test`, where the testing takes place.
+4. Once all tests are passed, `test` merged into the default branch: `prod`, thus concluding that phase.
+
+-	Bug fixes branch out from wherever they were discovered and merged into either:
+	-	`main` if they were discovered during development phase;
+	-	Also `main` if the fix will be part of the next `major` or `minor` realease.
+	-	or `test` if it'll be part of a `patch` release.
+-	Hot fixes similar to bug fixes have their independent branches. But unlike the former they -after careful testing- merge directly into `prod`, bumping the patch version.
+
+##### Development Cycle Example
+
+```mermaid
+gitGraph
+commit
+branch test
+branch prod
+
+checkout main
+
+branch feat/some_feature
+commit
+commit
+
+checkout main
+branch feat/some_other_feature
+commit
+
+checkout feat/some_feature
+commit
+
+checkout feat/some_other_feature
+commit
+
+checkout main
+merge feat/some_feature
+merge feat/some_other_feature
+
+checkout test
+merge main
+
+checkout prod
+merge test tag:"v1.0.0"
+
+checkout prod
+branch feat/new_feature
+commit
+commit
+
+checkout main
+merge feat/new_feature
+
+checkout test
+merge main
+
+checkout prod
+merge test tag:"v1.1.0"
+
+```
+
+##### Bugfix Examples
+
+```mermaid
+gitGraph
+commit
+branch test
+branch prod
+
+checkout main
+commit
+
+checkout test
+merge main
+
+checkout prod
+merge test tag: "v1.1.0"
+
+checkout main
+commit
+
+branch bgfx/0
+commit
+commit
+
+checkout main
+merge bgfx/0
+
+checkout test
+merge main
+
+branch bgfx/1
+commit
+
+checkout test
+merge bgfx/1
+
+checkout prod
+merge test tag: "v1.2.0"
+
+branch bgfx/2
+commit
+commit
+commit
+
+checkout test
+merge bgfx/2
+
+checkout prod
+merge test tag: "v1.2.1"
+
+```
+
+##### Hotfix Examples
+
+```mermaid
+gitGraph
+commit
+branch test
+branch prod
+
+checkout main
+commit
+
+checkout test
+merge main
+
+checkout prod
+merge test tag: "v1.2.1"
+
+branch htfx/3
+commit
+
+checkout test
+merge htfx/3
+
+checkout prod
+merge htfx/3 tag: "v1.2.2"
+commit tag: "v1.3.0"
+
+branch htfx/4
+commit
+
+checkout test
+merge htfx/4
+
+checkout prod
+merge htfx/4 tag: "v1.3.1"
+
+checkout htfx/4
+branch bgfx/4
+commit
+commit
+commit
+
+checkout main
+merge bgfx/4
+
+checkout test
+merge main
+
+checkout prod
+merge test tag: "v1.4.0"
+commit tag: "v1.4.1"
+
+branch bgfx/5
+commit
+
+branch htfx/5
+commit
+
+checkout test
+merge htfx/5
+
+checkout prod
+merge htfx/5 tag: "v1.4.2"
+
+checkout bgfx/5
+commit
+
+checkout main
+merge bgfx/5
+
+checkout test
+merge main
+
+checkout prod
+merge test tag: "v1.5.0"
+
+```
 <?/?>
 
 ---
