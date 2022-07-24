@@ -114,6 +114,17 @@ And 3 types of side branches:
 	-	or `test` if it'll be part of a `patch` release.
 -	Hot fixes similar to bug fixes have their independent branches. But unlike the former they -after careful testing- merge directly into `prod`, bumping the patch version.
 
+<style>
+b0	{ background-color:	rgb(121, 125, 125) }
+b1	{ background-color:	rgb(161,  34, 115) }
+b2	{ background-color:	rgb(106, 137, 147) }
+b3	{ background-color:	rgb(155,  92,  53) }
+b4	{ background-color:	rgb(204,  19,  19) }
+b5	{ background-color:	rgb(101,   0, 123) }
+b6	{ background-color:	rgb(204, 120,   1) }
+b7	{ background-color:	rgb( 49, 165,  14) }
+</style>
+
 ##### Development Cycle Example
 
 ```mermaid
@@ -142,6 +153,9 @@ checkout main
 merge feat/some_feature
 merge feat/some_other_feature
 
+branch feat/new_feature_1
+commit
+
 checkout test
 merge main
 
@@ -149,12 +163,18 @@ checkout prod
 merge test tag:"v1.0.0"
 
 checkout prod
-branch feat/new_feature
+branch feat/new_feature_2
 commit
 commit
 
 checkout main
-merge feat/new_feature
+merge feat/new_feature_2
+
+checkout feat/new_feature_1
+commit
+
+checkout main
+merge feat/new_feature_1
 
 checkout test
 merge main
@@ -163,6 +183,17 @@ checkout prod
 merge test tag:"v1.1.0"
 
 ```
+
+0. Here we have our three base branches: <b0>main</b0> <b1>test</b1> and <b2>prod</b2>.
+0. Development started on two side-branches: <b3>feat/some_feature</b3>, <b4>feat/some_other_feature</b4>.
+0. After those features were completed, they were merged back to <b0>main</b0>.
+1. Then development started on <b5>feat/new_feature_1</b5>.
+0. In the meantime <b0>main</b0> was merged into <b1>test</b1>.
+0. After thorough testing, <b1>test</b1> was merged into <b2>prod</b2>, which marked the release of ==v1.0.0==.
+1. Development started on <b6>feat/new_feature_2</b6>.
+1. After completing the new features, they were merged back into <b0>main</b0>.
+1. Again, <b0>main</b0> was merged into <b1>test</b1>.
+1. After passing the tests, <b1>test</b1> was merged into <b2>prod</b2>, thus releasing ==v1.1.0==.
 
 ##### Bugfix Examples
 
@@ -216,6 +247,18 @@ merge test tag: "v1.2.1"
 
 ```
 
+0. Sometime during the development cycle of ==v1.2== a bug (<b3>ID: #0</b3>) was discovered.
+0. It was fixed on <b3>bgfx/0</b3> and merged back to <b0>main</b0>.
+
+1. After ==v1.2== features were completed, <b1>test</b1>ing started again.
+1. During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
+1. <b4>It</b4> was merged back to <b1>test</b1>.
+1. When all <b1>test</b1>s were completed, ==v1.2.0== was relesased on <b2>prod</b2>.
+
+2. Sometime later a bug (<b5>ID: #2</b5>) was reported.
+2. Work on a solution was started on <b5>bgfx/2</b5>.
+2. <b5>It</b5> was <b1>test</b1>ed and later released as a patch on <b2>prod</b2> ==v1.2.1==.
+
 ##### Hotfix Examples
 
 ```mermaid
@@ -236,24 +279,20 @@ merge test tag: "v1.2.1"
 branch htfx/3
 commit
 
-checkout test
-merge htfx/3
-
 checkout prod
 merge htfx/3 tag: "v1.2.2"
 commit tag: "v1.3.0"
 
 branch htfx/4
-commit
+branch bgfx/4
 
-checkout test
-merge htfx/4
+checkout htfx/4
+commit
 
 checkout prod
 merge htfx/4 tag: "v1.3.1"
 
-checkout htfx/4
-branch bgfx/4
+checkout bgfx/4
 commit
 commit
 commit
@@ -274,9 +313,6 @@ commit
 branch htfx/5
 commit
 
-checkout test
-merge htfx/5
-
 checkout prod
 merge htfx/5 tag: "v1.4.2"
 
@@ -294,6 +330,24 @@ merge test tag: "v1.5.0"
 
 ```
 <?/?>
+
+1. During the life-cycle of ==v1.2.1== a bug (<b3>ID: #3</b3>) was discovered.
+1. It needed a quick solution, so fixing it started on <b3>htfx/3</b3>.
+1. Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and released as ==v1.2.2==.
+
+2. During the life-cycle of ==v1.3.0== another bug (<b4>ID: #4</b4>) was discovered.
+2. It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
+2. But unlike the previous bug <b4>it</b4> prooved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
+2. After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v1.3.1==
+2. In the meantime, a more permanent solution was developed on <b5>bgfx/4</b5>.
+2. <b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v1.4== and finally released as part of ==v1.4.0==.
+
+3. With the release of ==v1.4.1== a bug (<b6>ID: #5</b6>) was introduced.
+3. Fixing <b6>it</b6> started on <b6>bgfx/5</b6>.
+3. Soon turned out, a permanent soulution required features not yet implemented.
+3. So a quick workaround was delevoped on <b7>htfx/5</b7>.
+3. <b7>It</b7> was released as ==v1.4.2==.
+3. In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v1.5.0==.
 
 ---
 
