@@ -1,11 +1,12 @@
-# <?>@Title<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
+
+# <?>@Title<?/?>[^[0]^](#using-it "usage")<?/?>
 
 <?>
 This is a general purpose repo template.
 <?/?>
 
 <?>
-@IntroRm<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@IntroRm[^[0]^](#using-it "usage")
 <?/?>
 
 <?>
@@ -13,8 +14,8 @@ Currently includes the following:
 - A README.md
 - A CONTRIBUTING.md
 - Issue templates for:
-	- Bug report
-	- Feature request
+	- [Bug report](/.github/ISSUE_TEMPLATE/bug_report.md "bug report template")
+	- [Feature request](/.github/ISSUE_TEMPLATE/suggestion.md "suggestion template")
 <?/?>
 
 <?>
@@ -42,14 +43,14 @@ Not going to include:
 @ToC
 <?/?>
 
-## Getting <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
+## Getting <?>@It<?/?>[^[0]^](#using-it "usage")<?/?>
 
 <?>
 Basically you can just [clone it](https://github.com/nighterrors/_REPO-56A4F_General_.git).
 <?/?>
 
 <?>
-@HowToGet<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToGet[^[0]^](#using-it "usage")
 <?/?>
 
 See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
@@ -65,7 +66,7 @@ No need to install it.
 <?/?>
 
 <?>
-@HowToInstall<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToInstall[^[0]^](#using-it "usage")
 <?/?>
 
 ### Building it from source
@@ -75,20 +76,20 @@ There's nothing to build here.
 <?/?>
 
 <?>
-@HowToBuild<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToBuild[^[0]^](#using-it "usage")
 <?/?>
 
-## Using <?>@It<sup><a title="Usage" href="#KeyWord">[0]</a></sup><?/?>
+## Using <?>@It<?/?>
 
 <?>
-@HowToUse<sup><a title="Usage" href="#KeyWord">[0]</a></sup>
+@HowToUse
 <?/?>
 
 <?>
 1. [Create a repo based on this template.](https://github.com/nighterrors/_REPO-56A4F_General_/generate)
 2. **Replace *text between `<?>` and `<?/?>` marks* with your content.**
 	- Perhaps there will be a script, that automates this process to some extent.
-	- <span id="KeyWord">\[0\]: `@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize.</span>
+	- [0]: `@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize.
 	- The repo's name was chosen so that it's easy to capture and replace.
 3. ???
 4. Profit.
@@ -141,15 +142,9 @@ This applies to this temlpate too:
 Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue)!
 
 - Please [report bugs](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=bug&template=bug_report.md&title=%3CBUG%3E+) &lt;- there!
-	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors)!**<sup id="AiRepoOwner"><a title="They should publish a way of contacting them on their profile." onclick="document.getElementsByTagName('article')[0].getElementsByTagName('details')[0].open=true" href="#FiRepoOwner">[1]</a></sup>
+	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors)!**
+		:	A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.
 - If you have a [suggestion or idea](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=&template=suggestion.md&title=%3CIMP%3E+), do not hesitate to tell us! We literally thrive on feedback and especially constructive criticism! (No sarcasm intended.)
-
-<details markdown open><summary>Expand / Collapse note</summary>
-<dl>
-	<dt id="FiRepoOwner">1 <a title="Report security issues" href="#AiRepoOwner">^</a> Contact:</dt>
-	<dd>A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.</dd>
-</dl>
-</details>
 
 ## Contributing
 
