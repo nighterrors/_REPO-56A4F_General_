@@ -4,9 +4,35 @@ There are many ways to help out this project. Some require programming skills, b
 
 ---
 
+## TOC
+
+<?>@TOC<?/?>
 <?>
-@ToC
+- [Contributing](#contributing)
+	- [TOC](#toc)
+	- [Purpose of this Repo](#purpose-of-this-repo)
+	- [Community Standards](#community-standards)
+	- [Forum](#forum)
+	- [Documentation](#documentation)
+	- [Codebase](#codebase)
+		- [Pull Requests](#pull-requests)
+		- [Branch Hierarchy](#branch-hierarchy)
+			- [Workflow](#workflow)
+				- [Development Cycle Example](#development-cycle-example)
+				- [Bugfix Examples](#bugfix-examples)
+				- [Hotfix Examples](#hotfix-examples)
+	- [Coding Style](#coding-style)
+		- [Based on](#based-on)
+			- [See also](#see-also)
+		- [Key rules](#key-rules)
+			- [General](#general)
+			- [HTML](#html)
+			- [CSS](#css)
+			- [JS](#js)
+				- [Naming convention](#naming-convention)
 <?/?>
+
+---
 
 ## Purpose of this Repo
 
