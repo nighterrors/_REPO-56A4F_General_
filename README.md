@@ -1,12 +1,16 @@
 
-# <?>@Title<?/?>[^[0]^](#using-it "usage")<?/?>
+# <?>@Title<?/?>
+
+<?>
+@Title[^[0]^](#usage "usage")
+<?/?>
 
 <?>
 This is a general purpose repo template.
 <?/?>
 
 <?>
-@IntroRm[^[0]^](#using-it "usage")
+@IntroRm[^[0]^](#usage "usage")
 <?/?>
 
 <?>
@@ -35,40 +39,37 @@ Planned content:
 <?>
 Not going to include:
 - LICENSE.md - Since that would be inherited too AFAIK, which might not be desirable.
+- CODE_OF_CONDUCT.md - Same reason.
 <?/?>
 
 ---
 
 <?>@ToC<?/?>
 <?>
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-<!-- code_chunk_output -->
+- [<?>@Title<?/?>](#title)
+	- [Getting <?>@It<?/?>](#getting-it)
+		- [Installation](#installation)
+		- [Building it from source](#building-it-from-source)
+	- [Usage](#usage)
+	- [Community Standards](#community-standards)
+	- [Getting help](#getting-help)
+	- [Opening Issues](#opening-issues)
+	- [Contributing](#contributing)
+	- [Licence](#licence)
 
-- [<?>@Title<?/?>^](#using-it "usage")<?/?>](#title0using-it-usage)
-  - [Getting <?>@It<?/?>^](#using-it "usage")<?/?>](#getting-it0using-it-usage)
-    - [Installation](#installation)
-    - [Building it from source](#building-it-from-source)
-  - [Using <?>@It<?/?>](#using-it)
-  - [Community Standards](#community-standards)
-  - [Getting help](#getting-help)
-  - [Opening Issues](#opening-issues)
-  - [Contributing](#contributing)
-  - [Licence](#licence)
-
-<!-- /code_chunk_output -->
 <?/?>
 
 ---
 
-## Getting <?>@It<?/?>[^[0]^](#using-it "usage")<?/?>
+## Getting <?>@It<?/?>
 
 <?>
 Basically you can just [clone it](https://github.com/nighterrors/_REPO-56A4F_General_.git).
 <?/?>
 
 <?>
-@HowToGet[^[0]^](#using-it "usage")
+@HowToGet[^[0]^](#usage "usage") @It[^[0]^](#usage "usage")
 <?/?>
 
 See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki)
@@ -84,7 +85,7 @@ No need to install it.
 <?/?>
 
 <?>
-@HowToInstall[^[0]^](#using-it "usage")
+@HowToInstall[^[0]^](#usage "usage")
 <?/?>
 
 ### Building it from source
@@ -94,10 +95,10 @@ There's nothing to build here.
 <?/?>
 
 <?>
-@HowToBuild[^[0]^](#using-it "usage")
+@HowToBuild[^[0]^](#usage "usage")
 <?/?>
 
-## Using <?>@It<?/?>
+## Usage
 
 <?>
 @HowToUse
@@ -107,7 +108,8 @@ There's nothing to build here.
 1. [Create a repo based on this template.](https://github.com/nighterrors/_REPO-56A4F_General_/generate)
 2. **Replace *text between `<?>` and `<?/?>` marks* with your content.**
 	- Perhaps there will be a script, that automates this process to some extent.
-	- [0]: `@` symbols followed by CamelCase words will be used as keywords. There'll be like a JSON or something that you'll be able to customize.
+	- [0]: `@` symbols followed by CamelCase words are used as keywords. There'll be like a JSON or something that you'll be able to customize.
+	- Paragraphs between `<?>` and `<?/?>` marks not containing aforementioned keywords are only part of the template's documentation. They should be deleted during initialization.
 	- The repo's name was chosen so that it's easy to capture and replace.
 3. ???
 4. Profit.
@@ -179,4 +181,9 @@ See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LIC
 Spoiler: There's no licence file in the template, so repos based on it won't get accidentally left with the repo's licence.
 <?/?>
 
-<span style="font-family:monospace;">Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)</span>
+!!! info ""
+
+	Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)
+
+
+*[WTFPL]:	Do What The F*ck You Want To Public License
