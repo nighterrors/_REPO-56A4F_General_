@@ -1,3 +1,6 @@
+*[LTS]: Long-Term Support
+*[LT\*S\*]: Long-Term Support
+
 # Contributing
 
 There are many ways to help out this project. Some require programming skills, but others don't. *Here topics are ordered by their required skill level.*
@@ -22,6 +25,9 @@ There are many ways to help out this project. Some require programming skills, b
 				- [Bugfix Examples](#bugfix-examples)
 				- [Hotfix Examples](#hotfix-examples)
 		- [Versioning](#versioning)
+			- [SemVer](#semver)
+			- [Status](#status)
+			- [Build](#build)
 	- [Coding Style](#coding-style)
 		- [Based on](#based-on)
 			- [See also](#see-also)
@@ -360,16 +366,48 @@ merge test tag: "v1.5.0"
 <?>
 Versioning is done by a modified SemVer system.
 
-Stable version have a three part number: MAJOR.Minor.patch e.g.: `1.00.8`.
+#### SemVer
+
+Stable version have a three part number: ==MAJOR==**.**==Minor==**.**==patch== e.g.: `1.00.8`.
+
+- Major versions break compatibility.
+	> New major versions contain new features and do things differently.
+- Minor versions are backwards compatible within the same major version.
+	> New minor versions contain new features but don't do things differently.
+- Patch versions are forward compatible within the same minor version.
+	> New patch versions don't have new features, just bug fixes.
+
+#### Status
 
 Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readyness*.
+This is followed by a period and a build number.
 
-- Digits between 0 - 9 are reserved for *indev*.
-	0. 0 indicates work in progress.
-	1. 1 is for nightly builds, followed by the UTC date of the build in ISO8601 format.
+- Digits between `0` - `9` are reserved for *indev*.
+	1. `0` indicates work in progress.
+		> E.g.: v1.2.3-0.456789
+	1. `1` is for nightly builds, followed by the [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) date of the build in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.
+		> E.g.: v1.2.3-12022-01-01.456789
 	2. Other digits are not currently in use.
-- Letters from A - Q are for test builds.
-	- 
+- Letters from `A` to `Q` are for *test* builds.
+	0.	`A` is for alpha.
+		> E.g.: v1.2.3-A.456789
+	1.	`B` is for beta.
+		> E.g.: v1.2.3-B.456789
+	2.	The letters in between are not currently in use.
+	3.	`P` is for *p*re-release.
+		> E.g.: v1.2.3-P.456789
+	4.	`Q` is not currently in use.
+- The remaining letter are reserved for stable releases.
+	0.	`R` indicates a *r*elease version.
+		> E.g.: v1.2.3-R.456789
+	1.	`S` indicates a LTS version.
+		> E.g.: v1.2.3-S.456789
+	2.	Other letters are not currently in use.
+
+*This **status number** only indicates how well tested the code is. **Same version and build** numbers mean that the **code is exactly the same**, regardless of the status number!*
+
+#### Build
+
 <?/?>
 
 ## Coding Style
