@@ -21,6 +21,7 @@ There are many ways to help out this project. Some require programming skills, b
 				- [Development Cycle Example](#development-cycle-example)
 				- [Bugfix Examples](#bugfix-examples)
 				- [Hotfix Examples](#hotfix-examples)
+		- [Versioning](#versioning)
 	- [Coding Style](#coding-style)
 		- [Based on](#based-on)
 			- [See also](#see-also)
@@ -84,6 +85,8 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
 
 Also please follow our [branch hierarchy](#branch-hierarchy)!
+
+<?>@PRs<?/?>
 
 ### Branch Hierarchy
 
@@ -184,16 +187,16 @@ merge test tag:"v1.1.0"
 
 ```
 
-0. Here we have our three base branches: <b0>main</b0> <b1>test</b1> and <b2>prod</b2>.
-0. Development started on two side-branches: <b3>feat/some_feature</b3>, <b4>feat/some_other_feature</b4>.
-0. After those features were completed, they were merged back to <b0>main</b0>.
-1. Then development started on <b5>feat/new_feature_1</b5>.
-0. In the meantime <b0>main</b0> was merged into <b1>test</b1>.
-0. After thorough testing, <b1>test</b1> was merged into <b2>prod</b2>, which marked the release of ==v1.0.0==.
-1. Development started on <b6>feat/new_feature_2</b6>.
-1. After completing the new features, they were merged back into <b0>main</b0>.
-1. Again, <b0>main</b0> was merged into <b1>test</b1>.
-1. After passing the tests, <b1>test</b1> was merged into <b2>prod</b2>, thus releasing ==v1.1.0==.
+0.	Here we have our three base branches: <b0>main</b0> <b1>test</b1> and <b2>prod</b2>.
+0.	Development started on two side-branches: <b3>feat/some_feature</b3>, <b4>feat/some_other_feature</b4>.
+0.	After those features were completed, they were merged back to <b0>main</b0>.
+1.	Then development started on <b5>feat/new_feature_1</b5>.
+0.	In the meantime <b0>main</b0> was merged into <b1>test</b1>.
+0.	After thorough testing, <b1>test</b1> was merged into <b2>prod</b2>, which marked the release of ==v1.0.0==.
+1.	Development started on <b6>feat/new_feature_2</b6>.
+1.	After completing the new features, they were merged back into <b0>main</b0>.
+1.	Again, <b0>main</b0> was merged into <b1>test</b1>.
+1.	After passing the tests, <b1>test</b1> was merged into <b2>prod</b2>, thus releasing ==v1.1.0==.
 
 ##### Bugfix Examples
 
@@ -247,17 +250,17 @@ merge test tag: "v1.2.1"
 
 ```
 
-0. Sometime during the development cycle of ==v1.2== a bug (<b3>ID: #0</b3>) was discovered.
+0.	Sometime during the development cycle of ==v1.2== a bug (<b3>ID: #0</b3>) was discovered.
 0. It was fixed on <b3>bgfx/0</b3> and merged back to <b0>main</b0>.
 
-1. After ==v1.2== features were completed, <b1>test</b1>ing started again.
-1. During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
-1. <b4>It</b4> was merged back to <b1>test</b1>.
-1. When all <b1>test</b1>s were completed, ==v1.2.0== was relesased on <b2>prod</b2>.
+1.	After ==v1.2== features were completed, <b1>test</b1>ing started again.
+1.	During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
+1.	<b4>It</b4> was merged back to <b1>test</b1>.
+1.	When all <b1>test</b1>s were completed, ==v1.2.0== was relesased on <b2>prod</b2>.
 
-2. Sometime later a bug (<b5>ID: #2</b5>) was reported.
-2. Work on a solution was started on <b5>bgfx/2</b5>.
-2. <b5>It</b5> was <b1>test</b1>ed and later released as a patch on <b2>prod</b2> ==v1.2.1==.
+2.	Sometime later a bug (<b5>ID: #2</b5>) was reported.
+2.	Work on a solution was started on <b5>bgfx/2</b5>.
+2.	<b5>It</b5> was <b1>test</b1>ed and later released as a patch on <b2>prod</b2> ==v1.2.1==.
 
 ##### Hotfix Examples
 
@@ -329,33 +332,51 @@ checkout prod
 merge test tag: "v1.5.0"
 
 ```
+
+0.	During the life-cycle of ==v1.2.1== a bug (<b3>ID: #3</b3>) was discovered.
+0.	It needed a quick solution, so fixing it started on <b3>htfx/3</b3>.
+0.	Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and released as ==v1.2.2==.
+
+0.	During the life-cycle of ==v1.3.0== another bug (<b4>ID: #4</b4>) was discovered.
+0.	It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
+0.	But unlike the previous bug <b4>it</b4> prooved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
+0.	After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v1.3.1==
+0.	In the meantime, a more permanent solution was developed on <b5>bgfx/4</b5>.
+0.	<b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v1.4== and finally released as part of ==v1.4.0==.
+
+0.	With the release of ==v1.4.1== a bug (<b6>ID: #5</b6>) was introduced.
+0.	Fixing <b6>it</b6> started on <b6>bgfx/5</b6>.
+0.	Soon turned out, a permanent soulution required features not yet implemented.
+0.	So a quick workaround was delevoped on <b7>htfx/5</b7>.
+0.	<b7>It</b7> was released as ==v1.4.2==.
+0.	In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v1.5.0==.
+
 <?/?>
 
-1. During the life-cycle of ==v1.2.1== a bug (<b3>ID: #3</b3>) was discovered.
-1. It needed a quick solution, so fixing it started on <b3>htfx/3</b3>.
-1. Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and released as ==v1.2.2==.
+### Versioning
 
-2. During the life-cycle of ==v1.3.0== another bug (<b4>ID: #4</b4>) was discovered.
-2. It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
-2. But unlike the previous bug <b4>it</b4> prooved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
-2. After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v1.3.1==
-2. In the meantime, a more permanent solution was developed on <b5>bgfx/4</b5>.
-2. <b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v1.4== and finally released as part of ==v1.4.0==.
+<?>@Versioning<?/?>
 
-3. With the release of ==v1.4.1== a bug (<b6>ID: #5</b6>) was introduced.
-3. Fixing <b6>it</b6> started on <b6>bgfx/5</b6>.
-3. Soon turned out, a permanent soulution required features not yet implemented.
-3. So a quick workaround was delevoped on <b7>htfx/5</b7>.
-3. <b7>It</b7> was released as ==v1.4.2==.
-3. In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v1.5.0==.
+<?>
+Versioning is done by a modified SemVer system.
 
----
+Stable version have a three part number: MAJOR.Minor.patch e.g.: `1.00.8`.
+
+Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readyness*.
+
+- Digits between 0 - 9 are reserved for *indev*.
+	0. 0 indicates work in progress.
+	1. 1 is for nightly builds, followed by the UTC date of the build in ISO8601 format.
+	2. Other digits are not currently in use.
+- Letters from A - Q are for test builds.
+	- 
+<?/?>
 
 ## Coding Style
 
 ### Based on
 
-- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards#Indentation)
+- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards)
 
 #### See also
 
