@@ -28,6 +28,7 @@ There are many ways to help out this project. Some require programming skills, b
 			- [SemVer](#semver)
 			- [Status](#status)
 			- [Build](#build)
+			- [Example](#example)
 	- [Coding Style](#coding-style)
 		- [Based on](#based-on)
 			- [See also](#see-also)
@@ -383,7 +384,7 @@ Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd
 This is followed by a period and a build number.
 
 - Digits between `0` - `9` are reserved for *indev*.
-	1. `0` indicates work in progress.
+	0. `0` indicates work in progress.
 		> E.g.: v1.2.3-0.456789
 	1. `1` is for nightly builds, followed by the [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) date of the build in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.
 		> E.g.: v1.2.3-12022-01-01.456789
@@ -397,16 +398,50 @@ This is followed by a period and a build number.
 	3.	`P` is for *p*re-release.
 		> E.g.: v1.2.3-P.456789
 	4.	`Q` is not currently in use.
-- The remaining letter are reserved for stable releases.
+- The remaining letters are reserved for stable releases.
 	0.	`R` indicates a *r*elease version.
 		> E.g.: v1.2.3-R.456789
-	1.	`S` indicates a LTS version.
+	1.	`S` indicates an LTS version.
 		> E.g.: v1.2.3-S.456789
 	2.	Other letters are not currently in use.
 
 *This **status number** only indicates how well tested the code is. **Same version and build** numbers mean that the **code is exactly the same**, regardless of the status number!*
 
 #### Build
+
+Build numbers are unique within the *same version*. They start from 0 and incremented by 1 with each build.
+
+#### Example
+
+```mermaid
+gitGraph
+
+commit
+branch test
+branch prod
+
+checkout main
+commit tag: "v1.2.3-0.000"
+commit
+commit
+commit tag: "v1.2.3-0.003"
+
+checkout test
+merge main tag: "v1.2.3-A.003"
+
+checkout main
+commit tag: "v1.2.3-0.004"
+
+checkout test
+merge main tag: "v1.2.3-A.004"
+
+checkout prod
+merge test tag: "v1.2.3-R.004"
+
+checkout main
+commit tag: "v1.3.0-0.000"
+
+```
 
 <?/?>
 
