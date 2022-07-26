@@ -414,10 +414,9 @@ merge test tag: "v1.5.0"
 
 	:	To improve readability.
 
-	!!! hint ""
-		E.g.: ✅`defer` instead of ❌`defer=true`.
+	> :fa-info: E.g.: :fa-check: `defer` instead of :fa-ban: `defer=true`
 
-6. **Attribute values should always be quoted.**
+7. **Attribute values should always be quoted.**
 
 	:	For XML compatibility.
 
@@ -427,15 +426,13 @@ merge test tag: "v1.5.0"
 
 	:	To help distinguish them.
 
-	!!! hint ""
-		E.g.: `<html lang='en' >`.
+	> :fa-info: E.g.: `<html lang='en' >`
 
 6. **But double quotes `"` for arbitrary strings.**
 
 	:	To help distinguish keywords from.
 
-	!!! hint ""
-		E.g.: `<a href="github.com" >`.
+	> :fa-info: E.g.: `<a href="github.com" >`
 
 6. **Tags, attributes and keywords should be lowercase.**
 
@@ -443,8 +440,7 @@ merge test tag: "v1.5.0"
 
 	>	All tags and attributes must be lowercase. Plus any keyword interpreted by machines, except arbitrary names likes variables, classes, IDs, etc..
 
-	!!! hint ""
-		E.g.: `<link rel='icon' type='image/icon' href="favicon.ico" />`.
+	> :fa-info: E.g.: `<link rel='icon' type='image/icon' href="favicon.ico" />`
 
 6. **Attribute order:**
 
@@ -459,10 +455,8 @@ merge test tag: "v1.5.0"
 	5. Booleans
 	6. Link (`href`, `src`, etc.)
 
-	!!! info ""
-		From left to right: IDs from more general to the most specific.
-	!!! info ""
-		Leftmost: Most important attribute.
+	> :fa-info: **From left to right**: IDs from more general to the most specific.  
+	> :fa-info: **Leftmost**: Most important attribute.
 
 #### CSS
 
