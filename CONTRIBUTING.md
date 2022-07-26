@@ -46,52 +46,52 @@ This is a general purpose template repo, with potential customization capabiliti
 
 ## Community Standards
 
-See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md)!
+See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md "Code of Conduct")!
 
 <?>
-Spoiler: Tere are none:( - This is just a template, after all.
+>	Spoiler: Tere are none:( - This is just a template, after all.
 <?/?>
 
 ## Forum
 
 *Doesn't require coding skills, just an understanding how it works is enough to help others how to use it.*
 
-- [Help out by answering questions](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a).
-- *[Especially if you are bilingual](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/foreign-help)!*
+- [Help out by answering questions](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a "Discussions / Q&A").
+- *[Especially if you are bilingual](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/foreign-help "Discussions / Foreign help")!*
 
 ## Documentation
 
 *Under the hood documentation requires understanding the code, but usage instructions don't necessarily.*
 
-- [Help out by writing documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki).
+- [Help out by writing documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki "Wiki").
 
 ## Codebase
 
 *This definitely requires coding skills.*
 
-Before contributing to the codebase, please read our [coding guidelines](#Coding-Style)!
+Before contributing to the codebase, please read our [coding guidelines](#Coding-Style "## Coding Style")!
 
-- See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue), you can help with.
-	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/labels/good%20first%20issue), just to see how you like it!
-	- Help us with our most [pressing issues](https://github.com/nighterrors/_REPO-56A4F_General_/labels/help%20wanted)!
-	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/labels/bug) are allways wellcome!
-	- Or maybe you'd like to [implement new features](https://github.com/nighterrors/_REPO-56A4F_General_/labels/enhancement)?
+- See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue "Query open issues"), you can help with.
+	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22 "Query open issues labeled for newcomers"), just to see how you like it!
+	- Help us with our most [pressing issues](https://github.com/nighterrors/_REPO-56A4F_General_/labels/help%20wanted "#HelpWanted")!
+	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Abug "Query open bug reports") are allways wellcome!
+	- Or maybe you'd like to [implement new features](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement "Query open feature requests")?
 
 *At any rate, please start by replying to the issue, **letting everyone know what you're working on, and planning to do**. Especially if you're new here!*
 
 ### Pull Requests
 
-PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style)!
+PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style "## Coding Style")!
 
-Also please follow our [branch hierarchy](#branch-hierarchy)!
+Also please follow our [branch hierarchy](#branch-hierarchy "### Branch Hierarchy") and [versioning schema](#versioning "### Versioning")!
 
 ### Branch Hierarchy
 
 <?>
 This repo comes with 3 major branches:
-1. [`main`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main) - For active develoopment. *Merges into `test`.*
-2. [`test`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test) - For testing. *Merges into `prod`.*
-3. [`prod`](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod) - For releases.
+1. [`main` - For active develoopment](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main "Vew main branch"). *Merges into `test`.*
+2. [`test` - For testing](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test "Vew test branch"). *Merges into `prod`.*
+3. [`prod` - For releases](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod "Vew prod branch"). *Default.*
 
 And 3 types of side branches:
 - `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
@@ -355,12 +355,12 @@ merge test tag: "v1.5.0"
 
 ### Based on
 
-- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards#Indentation)
+- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards "Wordpress.org")
 
 #### See also
 
-- [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/)
-- [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/)
+- [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/ "FreeCodeCamp.org")
+- [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/ "blog.codinghorror.com")
 
 ### Key rules
 
