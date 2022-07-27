@@ -443,6 +443,14 @@ commit tag: "v1.3.0-0.000"
 
 ```
 
+0. Development started on ==v1.2.3==.
+1. With ==v1.2.3-0.003== all features were implemented.
+2. It was promoted to ==v1.2.3-A.003== and merged into <b1>test</b1>.
+3. Some tests failed, so a new build was made, that included the necessary fixes: ==v1.2.3-0.004==.
+4. It was merged into <b1>test</b1> as ==v1.2.3-A.004==.
+5. After passing all tests, it was released as ==v1.2.3-R.004== by merging into <b2>prod</b2>.
+6. Development started on the next version: ==v1.3.0== (thus resetting the build number).
+
 <?/?>
 
 ## Coding Style
