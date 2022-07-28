@@ -105,10 +105,9 @@ This repo comes with 3 major branches:
 
 And 3 types of side branches:
 - `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
-- `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test`.*
+- `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test` **and** `main`.*
 - `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
 <?/?>
-
 
 #### Workflow
 
@@ -241,6 +240,9 @@ commit
 checkout test
 merge bgfx/1
 
+checkout main
+merge bgfx/1
+
 checkout prod
 merge test tag: "v1.2.0"
 
@@ -250,6 +252,9 @@ commit
 commit
 
 checkout test
+merge bgfx/2
+
+checkout main
 merge bgfx/2
 
 checkout prod
@@ -262,12 +267,12 @@ merge test tag: "v1.2.1"
 
 1.	After ==v1.2== features were completed, <b1>test</b1>ing started again.
 1.	During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
-1.	<b4>It</b4> was merged back to <b1>test</b1>.
+1.	<b4>It</b4> was merged back to <b1>test</b1> and <b0>main</b0>.
 1.	When all <b1>test</b1>s were completed, ==v1.2.0== was relesased on <b2>prod</b2>.
 
 2.	Sometime later a bug (<b5>ID: #2</b5>) was reported.
 2.	Work on a solution was started on <b5>bgfx/2</b5>.
-2.	<b5>It</b5> was <b1>test</b1>ed and later released as a patch on <b2>prod</b2> ==v1.2.1==.
+2.	<b5>It</b5> was <b1>test</b1>ed and later added to <b0>main</b0> and released as a patch on <b2>prod</b2> ==v1.2.1==.
 
 ##### Hotfix Examples
 
@@ -291,6 +296,11 @@ commit
 
 checkout prod
 merge htfx/3 tag: "v1.2.2"
+
+checkout main
+merge htfx/3
+
+checkout prod
 commit tag: "v1.3.0"
 
 branch htfx/4
@@ -342,7 +352,7 @@ merge test tag: "v1.5.0"
 
 0.	During the life-cycle of ==v1.2.1== a bug (<b3>ID: #3</b3>) was discovered.
 0.	It needed a quick solution, so fixing it started on <b3>htfx/3</b3>.
-0.	Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and released as ==v1.2.2==.
+0.	Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and <b0>main</b0> and released as ==v1.2.2==.
 
 0.	During the life-cycle of ==v1.3.0== another bug (<b4>ID: #4</b4>) was discovered.
 0.	It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
