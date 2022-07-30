@@ -169,7 +169,7 @@ checkout test
 merge main
 
 checkout prod
-merge test tag:"v1.0.0"
+merge test tag:"v01.00.00"
 
 checkout prod
 branch feat/new_feature_2
@@ -189,7 +189,7 @@ checkout test
 merge main
 
 checkout prod
-merge test tag:"v1.1.0"
+merge test tag:"v01.01.00"
 
 ```
 
@@ -198,11 +198,11 @@ merge test tag:"v1.1.0"
 0.	After those features were completed, they were merged back to <b0>main</b0>.
 1.	Then development started on <b5>feat/new_feature_1</b5>.
 0.	In the meantime <b0>main</b0> was merged into <b1>test</b1>.
-0.	After thorough testing, <b1>test</b1> was merged into <b2>prod</b2>, which marked the release of ==v1.0.0==.
+0.	After thorough testing, <b1>test</b1> was merged into <b2>prod</b2>, which marked the release of ==v01.00.00==.
 1.	Development started on <b6>feat/new_feature_2</b6>.
 1.	After completing the new features, they were merged back into <b0>main</b0>.
 1.	Again, <b0>main</b0> was merged into <b1>test</b1>.
-1.	After passing the tests, <b1>test</b1> was merged into <b2>prod</b2>, thus releasing ==v1.1.0==.
+1.	After passing the tests, <b1>test</b1> was merged into <b2>prod</b2>, thus releasing ==v01.01.00==.
 
 ##### Bugfix Examples
 
@@ -219,7 +219,7 @@ checkout test
 merge main
 
 checkout prod
-merge test tag: "v1.1.0"
+merge test tag: "v01.01.00"
 
 checkout main
 commit
@@ -244,7 +244,7 @@ checkout main
 merge bgfx/1
 
 checkout prod
-merge test tag: "v1.2.0"
+merge test tag: "v01.02.00"
 
 branch bgfx/2
 commit
@@ -258,21 +258,21 @@ checkout main
 merge bgfx/2
 
 checkout prod
-merge test tag: "v1.2.1"
+merge test tag: "v01.02.01"
 
 ```
 
-0.	Sometime during the development cycle of ==v1.2== a bug (<b3>ID: #0</b3>) was discovered.
+0.	Sometime during the development cycle of ==v01.02== a bug (<b3>ID: #0</b3>) was discovered.
 0. It was fixed on <b3>bgfx/0</b3> and merged back to <b0>main</b0>.
 
-1.	After ==v1.2== features were completed, <b1>test</b1>ing started again.
+1.	After ==v01.02== features were completed, <b1>test</b1>ing started again.
 1.	During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
 1.	<b4>It</b4> was merged back to <b1>test</b1> and <b0>main</b0>.
-1.	When all <b1>test</b1>s were completed, ==v1.2.0== was relesased on <b2>prod</b2>.
+1.	When all <b1>test</b1>s were completed, ==v01.02.00== was relesased on <b2>prod</b2>.
 
 2.	Sometime later a bug (<b5>ID: #2</b5>) was reported.
 2.	Work on a solution was started on <b5>bgfx/2</b5>.
-2.	<b5>It</b5> was <b1>test</b1>ed and later added to <b0>main</b0> and released as a patch on <b2>prod</b2> ==v1.2.1==.
+2.	<b5>It</b5> was <b1>test</b1>ed and later added to <b0>main</b0> and released as a patch on <b2>prod</b2> ==v01.02.01==.
 
 ##### Hotfix Examples
 
@@ -289,19 +289,19 @@ checkout test
 merge main
 
 checkout prod
-merge test tag: "v1.2.1"
+merge test tag: "v01.02.01"
 
 branch htfx/3
 commit
 
 checkout prod
-merge htfx/3 tag: "v1.2.2"
+merge htfx/3 tag: "v01.02.02"
 
 checkout main
 merge htfx/3
 
 checkout prod
-commit tag: "v1.3.0"
+commit tag: "v01.03.00"
 
 branch htfx/4
 branch bgfx/4
@@ -310,7 +310,7 @@ checkout htfx/4
 commit
 
 checkout prod
-merge htfx/4 tag: "v1.3.1"
+merge htfx/4 tag: "v01.03.01"
 
 checkout bgfx/4
 commit
@@ -324,8 +324,8 @@ checkout test
 merge main
 
 checkout prod
-merge test tag: "v1.4.0"
-commit tag: "v1.4.1"
+merge test tag: "v01.04.00"
+commit tag: "v01.04.01"
 
 branch bgfx/5
 commit
@@ -334,7 +334,7 @@ branch htfx/5
 commit
 
 checkout prod
-merge htfx/5 tag: "v1.4.2"
+merge htfx/5 tag: "v01.04.02"
 
 checkout bgfx/5
 commit
@@ -346,27 +346,27 @@ checkout test
 merge main
 
 checkout prod
-merge test tag: "v1.5.0"
+merge test tag: "v01.05.00"
 
 ```
 
-0.	During the life-cycle of ==v1.2.1== a bug (<b3>ID: #3</b3>) was discovered.
+0.	During the life-cycle of ==v01.02.01== a bug (<b3>ID: #3</b3>) was discovered.
 0.	It needed a quick solution, so fixing it started on <b3>htfx/3</b3>.
-0.	Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and <b0>main</b0> and released as ==v1.2.2==.
+0.	Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and <b0>main</b0> and released as ==v01.02.02==.
 
-0.	During the life-cycle of ==v1.3.0== another bug (<b4>ID: #4</b4>) was discovered.
+0.	During the life-cycle of ==v01.03.00== another bug (<b4>ID: #4</b4>) was discovered.
 0.	It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
 0.	But unlike the previous bug <b4>it</b4> prooved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
-0.	After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v1.3.1==
+0.	After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v01.03.01==
 0.	In the meantime, a more permanent solution was developed on <b5>bgfx/4</b5>.
-0.	<b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v1.4== and finally released as part of ==v1.4.0==.
+0.	<b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v01.04== and finally released as part of ==v01.04.00==.
 
-0.	With the release of ==v1.4.1== a bug (<b6>ID: #5</b6>) was introduced.
+0.	With the release of ==v01.04.01== a bug (<b6>ID: #5</b6>) was introduced.
 0.	Fixing <b6>it</b6> started on <b6>bgfx/5</b6>.
 0.	Soon turned out, a permanent soulution required features not yet implemented.
 0.	So a quick workaround was delevoped on <b7>htfx/5</b7>.
-0.	<b7>It</b7> was released as ==v1.4.2==.
-0.	In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v1.5.0==.
+0.	<b7>It</b7> was released as ==v01.04.02==.
+0.	In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v01.05.00==.
 
 <?/?>
 
@@ -379,7 +379,7 @@ Versioning is done by a modified SemVer system.
 
 #### SemVer
 
-Stable version have a three part number: ==MAJOR==**.**==Minor==**.**==patch== e.g.: `1.00.8`.
+Stable version have a three part *hexadecimal* number (Usually written as capital letters.): ==MAJOR==**.**==Minor==**.**==patch== e.g.: `01.0A.C8`.
 
 - Major versions break compatibility.
 	> New major versions contain new features and do things differently.
@@ -390,29 +390,29 @@ Stable version have a three part number: ==MAJOR==**.**==Minor==**.**==patch== e
 
 #### Status
 
-Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readyness*.
+Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readyness*. (Letters aren't capitalised.)
 This is followed by a period and a build number.
 
 - Digits between `0` - `9` are reserved for *indev*.
 	0. `0` indicates work in progress.
-		> E.g.: v1.2.3-0.456789
+		> E.g.: v01.02.03-0.45678
 	1. `1` is for nightly builds, followed by the [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) date of the build in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.
-		> E.g.: v1.2.3-12022-01-01.456789
+		> E.g.: v01.02.03-12022-01-01.45678
 	2. Other digits are not currently in use.
-- Letters from `A` to `Q` are for *test* builds.
-	0.	`A` is for alpha.
-		> E.g.: v1.2.3-A.456789
-	1.	`B` is for beta.
-		> E.g.: v1.2.3-B.456789
+- Letters from `a` to `q` are for *test* builds.
+	0.	`a` is for alpha.
+		> E.g.: v01.02.03-a.45678
+	1.	`b` is for beta.
+		> E.g.: v01.02.03-b.45678
 	2.	The letters in between are not currently in use.
-	3.	`P` is for *p*re-release.
-		> E.g.: v1.2.3-P.456789
-	4.	`Q` is not currently in use.
+	3.	`p` is for *p*re-release.
+		> E.g.: v01.02.03-p.45678
+	4.	`q` is not currently in use.
 - The remaining letters are reserved for stable releases.
-	0.	`R` indicates a *r*elease version.
-		> E.g.: v1.2.3-R.456789
-	1.	`S` indicates an LTS version.
-		> E.g.: v1.2.3-S.456789
+	0.	`r` indicates a *r*elease version.
+		> E.g.: v01.02.03-r.45678
+	1.	`s` indicates an LTS version.
+		> E.g.: v01.02.03-s.45678
 	2.	Other letters are not currently in use.
 
 *This **status number** only indicates how well tested the code is. **Same version and build** numbers mean that the **code is exactly the same**, regardless of the status number!*
@@ -431,35 +431,35 @@ branch test
 branch prod
 
 checkout main
-commit tag: "v1.2.3-0.000"
+commit tag: "v01.02.03-0.00000"
 commit
 commit
-commit tag: "v1.2.3-0.003"
+commit tag: "v01.02.03-0.00003"
 
 checkout test
-merge main tag: "v1.2.3-A.003"
+merge main tag: "v01.02.03-a.00003"
 
 checkout main
-commit tag: "v1.2.3-0.004"
+commit tag: "v01.02.03-0.00004"
 
 checkout test
-merge main tag: "v1.2.3-A.004"
+merge main tag: "v01.02.03-a.00004"
 
 checkout prod
-merge test tag: "v1.2.3-R.004"
+merge test tag: "v01.02.03-r.00004"
 
 checkout main
-commit tag: "v1.3.0-0.000"
+commit tag: "v01.03.00-0.00000"
 
 ```
 
-0. Development started on ==v1.2.3==.
-1. With ==v1.2.3-0.003== all features were implemented.
-2. It was promoted to ==v1.2.3-A.003== and merged into <b1>test</b1>.
-3. Some tests failed, so a new build was made, that included the necessary fixes: ==v1.2.3-0.004==.
-4. It was merged into <b1>test</b1> as ==v1.2.3-A.004==.
-5. After passing all tests, it was released as ==v1.2.3-R.004== by merging into <b2>prod</b2>.
-6. Development started on the next version: ==v1.3.0== (thus resetting the build number).
+0. Development started on ==v01.02.03==.
+1. With ==v01.02.03-0.003== all features were implemented.
+2. It was promoted to ==v01.02.03-A.003== and merged into <b1>test</b1>.
+3. Some tests failed, so a new build was made, that included the necessary fixes: ==v01.02.03-0.004==.
+4. It was merged into <b1>test</b1> as ==v01.02.03-A.004==.
+5. After passing all tests, it was released as ==v01.02.03-R.004== by merging into <b2>prod</b2>.
+6. Development started on the next version: ==v01.03.00== (thus resetting the build number).
 
 <?/?>
 
