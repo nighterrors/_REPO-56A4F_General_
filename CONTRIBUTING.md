@@ -80,7 +80,7 @@ See the [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 Before contributing to the codebase, please read our [coding guidelines](#Coding-Style "### Coding Style")!
 
 - See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue "Query open issues"), you can help with.
-	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22 "Query open issues labeled for newcomers"), just to see how you like it!
+	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen "Query open issues labeled for newcomers"), just to see how you like it!
 	- Help us with our most [pressing issues](https://github.com/nighterrors/_REPO-56A4F_General_/labels/help%20wanted "#HelpWanted")!
 	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Abug "Query open bug reports") are allways wellcome!
 	- Or maybe you'd like to [implement new features](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement "Query open feature requests")?
@@ -119,28 +119,51 @@ Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd
 This is followed by a period and a build number.
 
 - Digits between `0` - `9` are reserved for *indev*.
+
 	1. `0` indicates work in progress.
+
 		> E.g.: v01.02.03-0.4567
-	1. `1` is for regular builds, followed by the [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) date of the build in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.
+
+	1. `1` is for regular builds, followed by the [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time "Wikipedia: UTC") date of the build in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601 "Wikipedia: ISO_8601") format.
+
 		1. Nightlies use date ([[CCYY]-[MM]-[DD]](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates "Wikipedia: Calendar dates")).
+
 			> E.g.: v01.02.03-12022-01-01.4567
-		2. Weekly builds use week ([CCYY-Www](https://en.wikipedia.org/wiki/ISO_week_date "Wikipedia: ISO week date"))
+
+		2. Weekly builds use year and week number([CCYY-Www](https://en.wikipedia.org/wiki/ISO_week_date "Wikipedia: ISO week date"))
+
 			>E.g.: v01.02.03-12021-W52.4567 (for a build compiled on 2022-01-02)
+
 	2. Other digits are not currently in use.
+
 - Letters from `a` to `q` are for *test* builds.
+
 	0. `a` is for alpha.
+
 		> E.g.: v01.02.03-a.4567
+
 	1. `b` is for beta.
+
 		> E.g.: v01.02.03-b.4567
+
 	2. The letters in between are not currently in use.
+
 	3. `p` is for *p*re-release.
+
 		> E.g.: v01.02.03-p.4567
+
 	4. `q` is not currently in use.
+
 - The remaining letters are reserved for stable releases.
+
 	0. `r` indicates a *r*elease version.
+
 		> E.g.: v01.02.03-r.4567
+
 	1. `s` indicates an LTS version.
+
 		> E.g.: v01.02.03-s.4567
+
 	2. Other letters are not currently in use.
 
 *This **status number** only indicates how well tested the code is. **Same version and build** numbers mean that the **code is exactly the same**, regardless of the status number!*
@@ -183,10 +206,10 @@ commit tag: "v01.03.00-0.0000"
 
 0. Development started on ==v01.02.03==.
 1. With ==v01.02.03-0.0003== all features were implemented.
-2. It was promoted to ==v01.02.03-A.0003== and merged into <b1>test</b1>.
+2. It was promoted to ==v01.02.03-a.0003== and merged into <b1>test</b1>.
 3. Some tests failed, so a new build was made, that included the necessary fixes: ==v01.02.03-0.0004==.
-4. It was merged into <b1>test</b1> as ==v01.02.03-A.0004==.
-5. After passing all tests, it was released as ==v01.02.03-R.0004== by merging into <b2>prod</b2>.
+4. It was merged into <b1>test</b1> as ==v01.02.03-a.0004==.
+5. After passing all tests, it was released as ==v01.02.03-r.0004== by merging into <b2>prod</b2>.
 6. Development started on the next version: ==v01.03.00== (thus resetting the build number).
 
 <?/?>
@@ -524,7 +547,7 @@ merge test tag: "v01.05.00"
 
 	:	For XML compatibility.
 
-	>	As per W3C recommendation, these tags should be closed with exactly one space followed by a forward slash.
+	>	As per [W3C recommendation](https://www.w3.org/html/wg/wiki/Guide/Syntax-Semantics "w3.org: Syntax-Semantics guide"), these tags should be closed with exactly one space followed by a forward slash.
 
 6. **Booleans in HTML should be in short form.**
 
