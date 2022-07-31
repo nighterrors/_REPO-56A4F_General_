@@ -135,7 +135,7 @@ See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wik
 
 ## Community Standards
 
-Before interacting with our community, please take a moment and read our [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md "Code of Conduct")!
+Before interacting with our community, please take a moment and read our [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 
 <?>
 >	Spoiler: Tere are none:( - This is just a template, remember?
@@ -168,14 +168,14 @@ Before opening a new ticket, please [check if there's already one](https://githu
 
 ## Contributing
 
-See: [Contributing](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CONTRIBUTING.md "Contributing.md").
+See: [Contributing](/CONTRIBUTING.md "Contributing.md").
 
 ## Licence
 <?>
 The template comes with [WTFPL-v2](https://spdx.org/licenses/WTFPL.html#licenseText "Read the whole licence"). Repos based on this template can have their own licences without any limitation.
 <?/?>
 
-See: [Licence](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/LICENSE "Licence").
+See: [Licence](/LICENSE "Licence").
 
 <?>
 >	Spoiler: There's no licence file in the template, so repos based on it won't get accidentally left with the repo's licence.

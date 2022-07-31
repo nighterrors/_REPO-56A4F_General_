@@ -54,7 +54,7 @@ This is a general purpose template repo, with potential customization capabiliti
 
 ## Community Standards
 
-See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General_/blob/main/CODE_OF_CONDUCT.md "Code of Conduct")!
+See the [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 
 <?>
 >	Spoiler: Tere are none:( - This is just a template, after all.
@@ -77,7 +77,7 @@ See the [community standards](https://github.com/nighterrors/_REPO-56A4F_General
 
 *This definitely requires coding skills.*
 
-Before contributing to the codebase, please read our [coding guidelines](#Coding-Style "## Coding Style")!
+Before contributing to the codebase, please read our [coding guidelines](#Coding-Style "### Coding Style")!
 
 - See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue "Query open issues"), you can help with.
 	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22 "Query open issues labeled for newcomers"), just to see how you like it!
@@ -91,7 +91,7 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style "## Coding Style")!
 
-Also please follow our [branch hierarchy](#branch-hierarchy "### Branch Hierarchy") and [versioning schema](#versioning "### Versioning")!
+Also please follow our [versioning schema](#versioning "### Versioning") and [branch hierarchy](#branch-hierarchy "### Branch Hierarchy")!
 
 <?>@PRs<?/?>
 
