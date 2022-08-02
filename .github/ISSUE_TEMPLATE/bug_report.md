@@ -37,7 +37,7 @@ assignees: ''
 - Fill out the table as detailed as you can.
 - You can add new rows by copy-pasting the last empty row.
 - You can indicate that individual cells are equal to the one directly above them with `-v-`.
-- Just delete this whole part and use table below the example.
+- Just delete this whole part and use the table below the example.
 
 #### Example
 
