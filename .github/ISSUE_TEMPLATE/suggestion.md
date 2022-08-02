@@ -11,25 +11,42 @@ assignees: ''
 
 ## Description
 
-### Is your feature request related to a problem? Please describe.
-((A clear and concise description of what the problem is. Ex. I'm always frustrated when...))
+### Related problem
+((Is your feature request related to a problem? 
+Please describe:
 
-### Describe the solution you'd like
-((A clear and concise description of what you want to happen.))
+- A clear and concise description of what the problem is.
+- Or what use case this feature would make easier.
 
-### Describe alternatives you've considered (Optional)
-((A clear and concise description of any alternative solutions or features you've considered.))
+> E.g.: I'm always frustrated when...
+> Or: It'd be easier to just...))
 
-### Additional context (Optional)
-((Add any other context or screenshots about the feature request here.))
+### Solution
+((Describe the solution you'd like:
+
+- A clear and concise description of what you want to happen.
+
+> E.g.: It'd be way better, if it did that thing like this instead:))
+
+### Describe alternatives you've considered ((*Optional*
+
+- A clear and concise description of any alternative solutions or features you've considered.- Summarize in a couple of words, how they are inferior to your proposal.))
+
+### Additional context
+((*Optional:*
+Add any other context about the feature request here.))
 
 ## Attachments
+((*Optional*))
 
 ### Screenshots
-((*If applicable:* Add screenshots to help explain your problem.))
+((*If applicable:*
+Add screenshots to help explain your idea.))
 
 ### Logs
-((*If applicable:* Add links to relevant logs here.))
+((*If applicable:*
+Add links to relevant logs here.))
 
 ### Other
-((*If applicable:* Links to other relevant stuff.))
+((*If applicable:*
+Links to other relevant stuff.))

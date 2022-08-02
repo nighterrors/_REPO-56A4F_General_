@@ -26,10 +26,12 @@ assignees: ''
 ((A clear and concise description of what you expected to happen.))
 
 ### Additional context
-((*If applicable:* Add any other context about the problem here.))
+((*If applicable:*
+Add any other context about the problem here.))
 
 ### Suggestion
-((*Optional:* If you have a suggestion, how to fix this bug, leave it here. - Thanks!))
+((*Optional:*
+If you have a suggestion, how to fix this bug, leave it here. - Thanks!))
 
 ### Platform
 ((Please enter affected platforms, one per line.
@@ -58,10 +60,13 @@ assignees: ''
 ## Attachments
 
 ### Screenshots
-((*If applicable:* Add screenshots to help explain your problem.))
+((*If applicable:*
+Add screenshots to help explain your problem.))
 
 ### Logs
-((*If applicable:* Add links to relevant logs here.))
+((*If applicable:*
+Add links to relevant logs here.))
 
 ### Other
-((*If applicable:* Links to other relevant stuff.))
+((*If applicable:*
+Links to other relevant stuff.))
