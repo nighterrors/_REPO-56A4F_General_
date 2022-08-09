@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-((To fill out the form, replace double parentheses and the text inside!))
+((To fill in the form, replace double parentheses and the text inside!))
 
 ## Description
 
@@ -28,9 +28,12 @@ Please describe:
 
 > E.g.: It'd be way better, if it did that thing like this instead:))
 
-### Describe alternatives you've considered ((*Optional*
+### Alternatives
+((*Optional:*
+Describe alternatives you've considered 
 
-- A clear and concise description of any alternative solutions or features you've considered.- Summarize in a couple of words, how they are inferior to your proposal.))
+- A clear and concise description of any alternative solutions or features you've considered.
+	- Summarize in a couple of words, how they are inferior to your proposal.))
 
 ### Additional context
 ((*Optional:*
@@ -50,3 +53,7 @@ Add links to relevant logs here.))
 ### Other
 ((*If applicable:*
 Links to other relevant stuff.))
+
+### Related Issues
+((*If any:*
+Links to related issues.))

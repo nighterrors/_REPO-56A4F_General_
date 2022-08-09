@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-((To fill out the form, replace double parentheses and the text inside!))
+((To fill in the form, replace double parentheses and the text inside!))
 
 ## Description
 
@@ -36,7 +36,7 @@ If you have a suggestion, how to fix this bug, leave it here. - Thanks!))
 ### Platform
 ((Please enter affected platforms, one per line.
 
-- Fill out the table as detailed as you can.
+- Fill in the table as detailed as you can.
 - You can add new rows by copy-pasting the last empty row.
 - You can indicate that individual cells are equal to the one directly above them with `-v-`.
 - Just delete this whole part and use the table below the example.
@@ -70,3 +70,7 @@ Add links to relevant logs here.))
 ### Other
 ((*If applicable:*
 Links to other relevant stuff.))
+
+### Related Issues
+((*If any:*
+Links to related issues.))
