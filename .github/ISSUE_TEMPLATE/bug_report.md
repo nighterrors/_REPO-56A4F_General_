@@ -34,7 +34,7 @@ Add any other context about the problem here.))
 If you have a suggestion, how to fix this bug, leave it here. - Thanks!))
 
 ### Platform
-((Please enter affected platforms, one per line.
+((Please enter affected platforms and versions, one per line.
 
 - Fill in the table as detailed as you can.
 - You can add new rows by copy-pasting the last empty row.
@@ -45,7 +45,7 @@ If you have a suggestion, how to fix this bug, leave it here. - Thanks!))
 
 |Device				|CPU				|GPU				|RAM		|Storage				|OS			|OS Version		|Browser|Browser Version|Software Version	|
 |---				|---				|---				|---		|---					|---		|---			|---	|---			|---				|
-|iPhone 6s			|ARMv8-A			|PowerVR GT7600		|2 GB LPDDR4|64 GB TLC NAND via NVMe|iOS		|15.6			|Safari	|15.6			|01.42.00r			|
+|iPhone 6s			|ARMv8-A			|PowerVR GT7600		|2 GB LPDDR4|64 GB TLC NAND via NVMe|iOS		|15.6			|Safari	|15.6			|01.42.00-r			|
 | -v-				| -v-				| -v-				| -v-		| -v-					|-v-		|-v-			|Opera	|3.3.3			|-v-				|
 |Asus Chromebox 4	|Intel Celeron 5205U|Intel HD Graphics	|DDR4 2×4 GB|64 GB eMMC				|Chrome OS	|103.0.5050.132	|Chrome	|103.0.5060		|-v-				|
 
