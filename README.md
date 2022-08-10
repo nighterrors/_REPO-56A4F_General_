@@ -15,8 +15,8 @@ This is a general purpose repo template.
 
 <?>
 Currently includes the following:
-- A README.md
-- A CONTRIBUTING.md
+- A [README.md](/README.md "Read Me")
+- A [CONTRIBUTING.md](/CONTRIBUTING.md "How to contribute")
 - Issue templates for:
 	- [Bug report](/.github/ISSUE_TEMPLATE/bug_report.md "bug report template")
 	- [Feature request](/.github/ISSUE_TEMPLATE/suggestion.md "suggestion template")
@@ -24,14 +24,14 @@ Currently includes the following:
 
 <?>
 Planned content:
-- Expansion of CONTRIBUTING.md with more coding guidlines for:
+- Expansion of [CONTRIBUTING.md](/CONTRIBUTING.md "How to contribute") with more coding guidlines for:
 	- CSS
 	- JS
 	- And later others (SQL, python comes to mind).
-- SECURITY.md
-- CODE_OF_CONDUCT.md
+- [SECURITY.md](/SECURITY.md "Security Policy")
+- [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md "Code of Conduct")
 - More issue templates?
-- More .github files - eventually
+- More [.github](/.github ".github folder") files - eventually
 - Folder hierarchy (if that prooves to be useful)
 - *A script of some sort, that automagically sets up a repo that was based on this template.*
 	- Config files for aforementioned script.
@@ -181,7 +181,6 @@ See: [Licence](/LICENSE "Licence").
 >	Spoiler: There's no licence file in the template, so repos based on it won't get accidentally left with the repo's licence.
 <?/?>
 
->	Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors)
-
+>	Based on [\_REPO-56A4F\_General\_ template](https://github.com/nighterrors/_REPO-56A4F_General_) by [@nighterrors](https://github.com/nighterrors "Nighterrors' profile on GitHub")
 
 *[WTFPL]:	Do What The Fuck You Want To Public License

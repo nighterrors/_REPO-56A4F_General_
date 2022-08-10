@@ -130,7 +130,7 @@ This is followed by a period and a build number.
 
 			> E.g.: v01.02.03-12022-01-01.4567
 
-		2. Weekly builds use year and week number([CCYY-Www](https://en.wikipedia.org/wiki/ISO_week_date "Wikipedia: ISO week date"))
+		2. Weekly builds use [ISO week year and week number ([CCYY]-W[ww])](https://en.wikipedia.org/wiki/ISO_week_date "Wikipedia: ISO week date")
 
 			>E.g.: v01.02.03-12021-W52.4567 (for a build compiled on 2022-01-02)
 
@@ -225,7 +225,7 @@ This repo comes with 3 major branches:
 And 3 types of side branches:
 - `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
 - `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test` **and** `main`.*
-- `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
+- `htfx/[bug track id]` - For hot fixes. *Merges into `prod` **and** `main`.* 
 <?/?>
 
 #### Workflow
