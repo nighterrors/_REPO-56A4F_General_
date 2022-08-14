@@ -24,7 +24,7 @@ Currently includes the following:
 
 <?>
 Planned content:
-- Expansion of [CONTRIBUTING.md](/CONTRIBUTING.md "How to contribute") with more coding guidlines for:
+- Expansion of [CONTRIBUTING.md](/CONTRIBUTING.md "How to contribute") with more coding guidelines for:
 	- CSS
 	- JS
 	- And later others (SQL, python comes to mind).
@@ -32,7 +32,7 @@ Planned content:
 - [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md "Code of Conduct")
 - More issue templates?
 - More [.github](/.github ".github folder") files - eventually
-- Folder hierarchy (if that prooves to be useful)
+- Folder hierarchy (if that proves to be useful)
 - *A script of some sort, that automagically sets up a repo that was based on this template.*
 	- Config files for aforementioned script.
 <?/?>
@@ -117,12 +117,12 @@ There's nothing to build here.
 
 <?>
 This repo comes with 3 major branches:
-1. `main` - For active develoopment. *Merges into `test`.*
-2. `test` - You've guessd it, for testing. *Merges into `prod`.*
+1. `main` - For active development. *Merges into `test`.*
+2. `test` - You've guessed it, for testing. *Merges into `prod`.*
 3. `prod` - For releases.
 
 And 3 types of side branches are supported:
-- `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
+- `feat/[feature's name]` - For feature development. *Merges into `main`.*
 - `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test`.*
 - `htfx/[bug track id]` - For hot fixes. *Merges into `prod`.* 
 <?/?>
@@ -138,7 +138,7 @@ See [full documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wik
 Before interacting with our community, please take a moment and read our [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 
 <?>
->	Spoiler: Tere are none:( - This is just a template, remember?
+>	Spoiler: There are none:( - This is just a template, remember?
 <?/?>
 
 ## Getting help
@@ -149,20 +149,20 @@ If you need help with this template, head to the [forum's Q&A section](https://g
 
 1. Start with the [documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki "Wiki").
 2. Look around in the [forum Q&amp;A](https://github.com/nighterrors/_REPO-56A4F_General_/discussions/categories/q-a "Discussions / Q&A").
-	1. Hopfully there's already an answer for your question.
-	2. If there isn't, but at least someone else has asked the same question, please **bump** theirs, as opening a new thread will only decrease both of y'all chanses of getting an answer.
+	1. Hopefully there's already an answer for your question.
+	2. If there isn't, but at least someone else has asked the same question, please **bump** theirs, as opening a new thread will only decrease both of y'all chances of getting an answer.
 	3. However, if your question is brand new, then by all means, open a new thread and ask away! Surly, someone will find a solution! - Eventually.
 
 ## Opening Issues
 
 <?>
-This applies to this temlpate too:
+This applies to this template too:
 <?/?>
 
 Before opening a new ticket, please [check if there's already one](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue "Query all issues")!
 
 - Please [report bugs](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=bug&template=bug_report.md&title=%3CBUG%3E+ "Open bug report") &lt;- there!
-	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors "Nighterror's profile")!**
+	- **Security issues should be reported privately to the [repository owner](https://github.com/nighterrors "Nighterrors' profile")!**
 		:	A repository owner may choose to publish contact info for sensitive communication on their profile, instead of putting it in every readme and it's commit history. For it's easier to maintain and less permanent.
 - If you have a [suggestion or idea](https://github.com/nighterrors/_REPO-56A4F_General_/issues/new?assignees=&labels=&template=suggestion.md&title=%3CIMP%3E+ "Open feature request"), do not hesitate to tell us! We literally thrive on feedback and especially constructive criticism! (No sarcasm intended.)
 

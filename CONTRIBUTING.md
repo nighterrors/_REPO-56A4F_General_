@@ -32,7 +32,7 @@ There are many ways to help out this project. Some require programming skills, b
 				- [CSS](#css)
 				- [JS](#js)
 				- [Naming convention](#naming-convention)
-		- [Git Commit Guidlines](#git-commit-guidlines)
+		- [Git Commit Guidelines](#git-commit-guidelines)
 		- [Pull Requests](#pull-requests)
 		- [Versioning](#versioning)
 			- [SemVer](#semver)
@@ -58,7 +58,7 @@ This is a general purpose template repo, with potential customization capabiliti
 See the [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 
 <?>
->	Spoiler: Tere are none:( - This is just a template, after all.
+>	Spoiler: There are none:( - This is just a template, after all.
 <?/?>
 
 ## Forum
@@ -81,9 +81,9 @@ See the [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 Before contributing to the codebase, please read our [coding guidelines](#Coding-Style "### Coding Style")!
 
 - See if there are [open issues](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue "Query open issues"), you can help with.
-	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen "Query open issues labeled for newcomers"), just to see how you like it!
+	- Start with [something easy](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen "Query open issues labelled for newcomers"), just to see how you like it!
 	- Help us with our most [pressing issues](https://github.com/nighterrors/_REPO-56A4F_General_/labels/help%20wanted "#HelpWanted")!
-	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Abug "Query open bug reports") are allways wellcome!
+	- [Bug fixes](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Abug "Query open bug reports") are always welcome!
 	- Or maybe you'd like to [implement new features](https://github.com/nighterrors/_REPO-56A4F_General_/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement "Query open feature requests")?
 
 *At any rate, please start by replying to the issue, **letting everyone know what you're working on, and planning to do**. Especially if you're new here!*
@@ -92,12 +92,12 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 <?>
 This repo comes with 3 major branches:
-1. [`main` - For active develoopment](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main "Vew main branch"). *Merges into `test`.*
+1. [`main` - For active development](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main "Vew main branch"). *Merges into `test`.*
 2. [`test` - For testing](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test "Vew test branch"). *Merges into `prod`.*
 3. [`prod` - For releases](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod "Vew prod branch"). *Default.*
 
 And 3 types of side branches:
-- `feat/[feature's name]` - For feature develoopment. *Merges into `main`.*
+- `feat/[feature's name]` - For feature development. *Merges into `main`.*
 - `bgfx/[bug track id]` - For bug fixes. *Merges into `main` or `test` **and** `main`.*
 - `htfx/[bug track id]` - For hot fixes. *Merges into `prod` **and** `main`.* 
 <?/?>
@@ -112,7 +112,7 @@ And 3 types of side branches:
 
 - Bug fixes branch out from wherever they were discovered and merged into either:
 	- `main` if they were discovered during development phase;
-	- Also `main` if the fix will be part of the next `major` or `minor` realease.
+	- Also `main` if the fix will be part of the next `major` or `minor` release.
 	- or `test` if it'll be part of a `patch` release.
 - Hot fixes similar to bug fixes have their independent branches. But unlike the former they -after careful testing- merge directly into `prod`, bumping the patch version.
 
@@ -261,7 +261,7 @@ merge test tag: "v01.02.01"
 1. After ==v01.02== features were completed, <b1>test</b1>ing started again.
 1. During <b1>test</b1>ing a new bug (<b4>ID: #1</b4>) was discovered and fixed on <b4>bgfx/1</b4>.
 1. <b4>It</b4> was merged back to <b1>test</b1> and <b0>main</b0>.
-1. When all <b1>test</b1>s were completed, ==v01.02.00== was relesased on <b2>prod</b2>.
+1. When all <b1>test</b1>s were completed, ==v01.02.00== was released on <b2>prod</b2>.
 
 2. Sometime later a bug (<b5>ID: #2</b5>) was reported.
 2. Work on a solution was started on <b5>bgfx/2</b5>.
@@ -348,18 +348,18 @@ merge test tag: "v01.05.00"
 0. Luckily, it was an easy fix, so after testing it was merged into <b2>prod</b2> and <b0>main</b0> and released as ==v01.02.02==.
 
 0. During the life-cycle of ==v01.03.00== another bug (<b4>ID: #4</b4>) was discovered.
-0. It too needed a quick soulution, so develpoment started on <b4>htfx/4</b4>.
-0. But unlike the previous bug <b4>it</b4> prooved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
+0. It too needed a quick solution, so development started on <b4>htfx/4</b4>.
+0. But unlike the previous bug <b4>it</b4> proved to be more complicated, so based on <b4>it</b4>'s urgency, a workaround was implemented.
 0. After testing, <b4>it</b4> was merged into <b2>prod</b2> and released as ==v01.03.01==
 0. In the meantime, a more permanent solution was developed on <b5>bgfx/4</b5>.
 0. <b5>It</b5> was merged int the <b0>main</b0> development cycle of ==v01.04== and finally released as part of ==v01.04.00==.
 
 0. With the release of ==v01.04.01== a bug (<b6>ID: #5</b6>) was introduced.
 0. Fixing <b6>it</b6> started on <b6>bgfx/5</b6>.
-0. Soon turned out, a permanent soulution required features not yet implemented.
-0. So a quick workaround was delevoped on <b7>htfx/5</b7>.
+0. Soon turned out, a permanent solution required features not yet implemented.
+0. So a quick workaround was developed on <b7>htfx/5</b7>.
 0. <b7>It</b7> was released as ==v01.04.02==.
-0. In the meantime, development of a permanent solution contiued on <b6>bgfx/5</b6>. And eventually released with ==v01.05.00==.
+0. In the meantime, development of a permanent solution continued on <b6>bgfx/5</b6>. And eventually released with ==v01.05.00==.
 
 <?/?>
 
@@ -385,7 +385,7 @@ merge test tag: "v01.05.00"
 
 0. ***Use <kbd>tab</kbd> characters to indent lines!***
 
-	:	**Tabs are flexible.** Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can allways collaborate on the same file and still have it rendered the way you like it.
+	:	**Tabs are flexible.** Either you prefer 2 or 4 spaces per indention level(, or any other uncommon number), using tabs lets you set up your editor to render them as short or as long as you like it. And it doesn't matter if your friends / colleagues prefer it differently, y'all can always collaborate on the same file and still have it rendered the way you like it.
 
 	:	Using tabs saves you at least 1 B per character;)
 
@@ -397,7 +397,7 @@ merge test tag: "v01.05.00"
 
 0. *Prefer descriptive names over explanations.*
 
-	:	It'll help remebering what it does, without having to find where it was explained.
+	:	It'll help remembering what it does, without having to find where it was explained.
 
 	:	It'll also help others better understand the code.
 
@@ -519,11 +519,11 @@ merge test tag: "v01.05.00"
 
 
 
-### Git Commit Guidlines
+### Git Commit Guidelines
 
 ### Pull Requests
 
-PRs are allways wellcome as long as they adhere to the [coding guidelines](#Coding-Style "## Coding Style")!
+PRs are always welcome as long as they adhere to the [coding guidelines](#Coding-Style "## Coding Style")!
 
 Also please follow our [versioning schema](#versioning "### Versioning") and [branch hierarchy](#branch-hierarchy "### Branch Hierarchy")!
 
@@ -549,10 +549,10 @@ Stable version have a three part *hexadecimal* number (Where A-F are usually cap
 
 #### Status
 
-Non-stabel code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readyness*. (Letters aren't capitalised.)
+Non-stable code has its ***target*** version number suffixed by a <kbd>dash</kbd> and an alpha-numeric value indicating its *readiness*. (Letters aren't capitalised.)
 This is followed by a period and a build number.
 
-- Digits between `0` - `9` are reserved for *indev*.
+- Digits between `0` - `9` are reserved for *inDev*.
 
 	1. `0` indicates work in progress.
 
