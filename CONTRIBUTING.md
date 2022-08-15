@@ -1,7 +1,5 @@
 *[LTS]: Long-Term Support
 
-<?cSpell:words CCYY Wordpress bgfx codinghorror elease htfx ><?/?>
-
 # Contributing
 
 There are many ways to help out this project. Some require programming skills, but others don't. *Here topics are ordered by their required skill level.*
