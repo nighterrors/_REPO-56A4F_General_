@@ -1,5 +1,6 @@
 *[LTS]: Long-Term Support
-*[LT\*S\*]: Long-Term Support
+
+<?cSpell:words CCYY Wordpress bgfx codinghorror elease htfx ><?/?>
 
 # Contributing
 
