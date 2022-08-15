@@ -19,20 +19,24 @@ There are many ways to help out this project. Some require programming skills, b
 	- [Documentation](#documentation)
 	- [Codebase](#codebase)
 		- [Branching Strategy](#branching-strategy)
+			- [Based on](#based-on)
+				- [See also](#see-also)
+			- [Branching Model](#branching-model)
 			- [Workflow](#workflow)
 				- [Development Cycle Example](#development-cycle-example)
 				- [Bugfix Examples](#bugfix-examples)
 				- [Hotfix Examples](#hotfix-examples)
 		- [Coding Style](#coding-style)
-			- [Based on](#based-on)
-				- [See also](#see-also)
-			- [Key rules](#key-rules)
+			- [Based on](#based-on-1)
+				- [See also](#see-also-1)
+			- [Key Rules](#key-rules)
 				- [General](#general)
 				- [HTML](#html)
 				- [CSS](#css)
 				- [JS](#js)
 				- [Naming convention](#naming-convention)
 		- [Git Commit Guidelines](#git-commit-guidelines)
+			- [Based on](#based-on-2)
 		- [Pull Requests](#pull-requests)
 		- [Versioning](#versioning)
 			- [SemVer](#semver)
@@ -90,11 +94,26 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 ### Branching Strategy
 
+#### Based on
+
+- [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/ "A successful Git branching model - nvie.com"): *A successful Git branching model* by *Vincent Driessen*
+
+##### See also
+
+- [Comparison of Branching Strategies](https://www.flagship.io/git-branching-strategies/ "What Are the Best Git Branching Strategies - www.flagship.io"): *What Are the Best Git Branching Strategies* by *Rowan Haddad*
+- [Comparison of Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows "Comparing Workflows - www.atlassian.com"): *Comparing Workflows* - *Atlassian* tutorial
+- [Git Flow vs GitHub Flow](https://scottchacon.com/2011/08/31/github-flow.html "GitHub Flow - scottchacon.com"): *GitHub Flow* by *Scott Chacon*
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow "GitHub flow - docs.github.com"): *GitHub flow* - *GitHub* documentation
+- [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html "Introduction to GitLab Flow - docs.gitlab.com"): *Introduction to GitLab Flow* - *GitLab* documentation
+- [Simple Git Workflow](https://www.atlassian.com/blog/git/simple-git-workflow-is-simple "Simple Git workflow is simple - www.atlassian.com"): *Simple Git workflow is simple* by *Nicola Paolucci*
+
+#### Branching Model
+
 <?>
 This repo comes with 3 major branches:
-1. [`main` - For active development](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main "Vew main branch"). *Merges into `test`.*
-2. [`test` - For testing](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test "Vew test branch"). *Merges into `prod`.*
-3. [`prod` - For releases](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod "Vew prod branch"). *Default.*
+1. [`main` - For active development](https://github.com/nighterrors/_REPO-56A4F_General_/tree/main "View main branch"). *Merges into `test`.*
+2. [`test` - For testing](https://github.com/nighterrors/_REPO-56A4F_General_/tree/test "View test branch"). *Merges into `prod`.*
+3. [`prod` - For releases](https://github.com/nighterrors/_REPO-56A4F_General_/tree/prod "View prod branch"). *Default.*
 
 And 3 types of side branches:
 - `feat/[feature's name]` - For feature development. *Merges into `main`.*
@@ -368,14 +387,14 @@ merge test tag: "v01.05.00"
 
 #### Based on
 
-- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards "Wordpress.org")
+- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards "codex.wordpress.org")
 
 ##### See also
 
-- [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/ "FreeCodeCamp.org")
-- [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/ "blog.codinghorror.com")
+- [Clean Code](https://www.freecodecamp.org/news/clean-coding-for-beginners/ "Clean Code Explained - FreeCodeCamp.org")
+- [Naming Things](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/ "I Shall Call It.. SomethingManager - blog.codinghorror.com")
 
-#### Key rules
+#### Key Rules
 
 ##### General
 
@@ -520,6 +539,10 @@ merge test tag: "v01.05.00"
 
 
 ### Git Commit Guidelines
+
+#### Based on
+
+- [Commit Guidelines](https://ec.europa.eu/component-library/v1.14.2/ec/docs/conventions/git/ "Git Commit Guidelines - ec.europa.eu") of the European Commission
 
 ### Pull Requests
 
