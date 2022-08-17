@@ -7,10 +7,6 @@ assignees: ''
 
 ---
 
-
-<?cSpell:words Chromebox LPDDR4 ><?/?>
-
-
 ((To fill in the form, replace double parentheses and the text inside!))
 
 ## Description
