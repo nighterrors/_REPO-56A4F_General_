@@ -96,16 +96,16 @@ Before contributing to the codebase, please read our [coding guidelines](#Coding
 
 #### Based on
 
-- [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/ "A successful Git branching model - nvie.com"): *A successful Git branching model* by *Vincent Driessen*
+- Git Flow: [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/ "nvie.com") by *Vincent Driessen*
 
 ##### See also
 
-- [Comparison of Branching Strategies](https://www.flagship.io/git-branching-strategies/ "What Are the Best Git Branching Strategies - www.flagship.io"): *What Are the Best Git Branching Strategies* by *Rowan Haddad*
-- [Comparison of Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows "Comparing Workflows - www.atlassian.com"): *Comparing Workflows* - *Atlassian* tutorial
-- [Git Flow vs GitHub Flow](https://scottchacon.com/2011/08/31/github-flow.html "GitHub Flow - scottchacon.com"): *GitHub Flow* by *Scott Chacon*
-- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow "GitHub flow - docs.github.com"): *GitHub flow* - *GitHub* documentation
-- [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html "Introduction to GitLab Flow - docs.gitlab.com"): *Introduction to GitLab Flow* - *GitLab* documentation
-- [Simple Git Workflow](https://www.atlassian.com/blog/git/simple-git-workflow-is-simple "Simple Git workflow is simple - www.atlassian.com"): *Simple Git workflow is simple* by *Nicola Paolucci*
+- Comparison of Branching Strategies: [What Are the Best Git Branching Strategies](https://www.flagship.io/git-branching-strategies/ "www.flagship.io") by *Rowan Haddad*
+- Comparison of Workflows: [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows "www.atlassian.com") - *Atlassian* tutorial
+- Git Flow vs GitHub Flow: [GitHub Flow](https://scottchacon.com/2011/08/31/github-flow.html "scottchacon.com") by *Scott Chacon*
+- GitHub Flow: [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow "docs.github.com") - *GitHub* documentation
+- GitLab Flow: [Introduction to GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html "docs.gitlab.com") - *GitLab* documentation
+- Simple Git Workflow: [Simple Git workflow is simple](https://www.atlassian.com/blog/git/simple-git-workflow-is-simple "www.atlassian.com") by *Nicola Paolucci*
 
 #### Branching Model
 
@@ -387,12 +387,12 @@ merge test tag: "v01.05.00"
 
 #### Based on
 
-- [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards "codex.wordpress.org")
+- Standards: [WordPress Coding Standards](https://codex.wordpress.org/WordPress_Coding_Standards "codex.wordpress.org") *WordPress* documentation
 
 ##### See also
 
-- [Clean Code](https://www.freecodecamp.org/news/clean-coding-for-beginners/ "Clean Code Explained - FreeCodeCamp.org")
-- [Naming Things](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/ "I Shall Call It.. SomethingManager - blog.codinghorror.com")
+- Clean Code: [Clean Code Explained](https://www.freecodecamp.org/news/clean-coding-for-beginners/ "FreeCodeCamp.org") by *Yiğit Kemal Erinç*
+- Naming Things: [I Shall Call It.. SomethingManager](https://blog.codinghorror.com/i-shall-call-it-somethingmanager/ "blog.codinghorror.com") by *Jeff Atwood*
 
 #### Key Rules
 
@@ -542,7 +542,7 @@ merge test tag: "v01.05.00"
 
 #### Based on
 
-- [Commit Guidelines](https://ec.europa.eu/component-library/v1.14.2/ec/docs/conventions/git/ "Git Commit Guidelines - ec.europa.eu") of the European Commission
+- Commit Guidelines: [Git Commit Guidelines](https://ec.europa.eu/component-library/v1.14.2/ec/docs/conventions/git/ "ec.europa.eu") of the *European Commission*
 
 ### Pull Requests
 
