@@ -18,6 +18,7 @@ There are many ways to help out this project. Some require programming skills, b
 	- [Forum](#forum)
 	- [Documentation](#documentation)
 	- [Codebase](#codebase)
+		- [See](#see)
 		- [Branching Strategy](#branching-strategy)
 			- [Based on](#based-on)
 				- [See also](#see-also)
@@ -37,8 +38,10 @@ There are many ways to help out this project. Some require programming skills, b
 				- [Naming convention](#naming-convention)
 		- [Git Commit Guidelines](#git-commit-guidelines)
 			- [Based on](#based-on-2)
+				- [See also](#see-also-2)
 		- [Pull Requests](#pull-requests)
 		- [Versioning](#versioning)
+				- [Based on](#based-on-3)
 			- [SemVer](#semver)
 			- [Status](#status)
 			- [Build](#build)
@@ -79,6 +82,12 @@ See the [community standards](/CODE_OF_CONDUCT.md "Code of Conduct")!
 - [Help out by writing documentation](https://github.com/nighterrors/_REPO-56A4F_General_/wiki "Wiki").
 
 ## Codebase
+
+### See
+
+- Project Guidelines: [GitHub Project Guidelines](https://gist.github.com/rsp/057481db4dbd999bb7077f211f53f212 "gist.github.com") by *[rsp](https://gist.github.com/rsp)*
+
+---
 
 *This definitely requires coding skills.*
 
@@ -544,6 +553,12 @@ merge test tag: "v01.05.00"
 
 - Commit Guidelines: [Git Commit Guidelines](https://ec.europa.eu/component-library/v1.14.2/ec/docs/conventions/git/ "ec.europa.eu") of the *European Commission*
 
+##### See also
+
+- Commit message: [How to Write a Git Commit Message](https://cbea.ms/git-commit/ "cbea.ms") by *CBEAMS*, I guess
+- Commit message: [Commit Message Guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53 "gist.github.com") by *[robertpainsi](https://gist.github.com/robertpainsi)*
+- Commit guidelines: [Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits "github.com") by *[angular](https://github.com/angular)*
+
 ### Pull Requests
 
 PRs are always welcome as long as they adhere to the [coding guidelines](#Coding-Style "## Coding Style")!
@@ -558,6 +573,12 @@ Also please follow our [versioning schema](#versioning "### Versioning") and [br
 
 <?>
 Versioning is done by a modified SemVer system.
+
+##### Based on
+
+- SemVer: [Semantic Versioning](https://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning "en.wikipedia.org") by *Wikipedia*
+
+---
 
 #### SemVer
 
