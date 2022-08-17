@@ -1,5 +1,4 @@
 *[LTS]: Long-Term Support
-*[LT\*S\*]: Long-Term Support
 
 # Contributing
 
