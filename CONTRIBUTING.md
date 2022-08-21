@@ -38,13 +38,34 @@ There are many ways to help out this project. Some require programming skills, b
 		- [Git Commit Guidelines](#git-commit-guidelines)
 			- [Based on](#based-on-2)
 				- [See also](#see-also-2)
+			- [Categories](#categories)
+			- [Content](#content)
+				- [Incremental](#incremental)
+				- [Normal](#normal)
+				- [Merge](#merge)
+				- [Revert](#revert)
+			- [Message](#message)
+				- [Header](#header)
+					- [Type](#type)
+					- [Scope](#scope)
+					- [Subject](#subject)
+				- [Body](#body)
+				- [Footer](#footer)
+					- [Issues](#issues)
+					- [Breaking Changes](#breaking-changes)
+					- [Sign-off](#sign-off)
+				- [Example](#example)
+					- [Incremental](#incremental-1)
+					- [Revert](#revert-1)
+					- [Normal](#normal-1)
+					- [Merge](#merge-1)
 		- [Pull Requests](#pull-requests)
 		- [Versioning](#versioning)
 				- [Based on](#based-on-3)
 			- [SemVer](#semver)
 			- [Status](#status)
 			- [Build](#build)
-			- [Example](#example)
+			- [Example](#example-1)
 <?/?>
 
 ---
@@ -551,12 +572,332 @@ merge test tag: "v01.05.00"
 #### Based on
 
 - Commit Guidelines: [Git Commit Guidelines](https://ec.europa.eu/component-library/v1.14.2/ec/docs/conventions/git/ "ec.europa.eu") of the *European Commission*
+- Commit message: [How to Write a Git Commit Message](https://cbea.ms/git-commit/ "cbea.ms") by *[CBEAMS](https://github.com/cbeams)*
 
 ##### See also
 
-- Commit message: [How to Write a Git Commit Message](https://cbea.ms/git-commit/ "cbea.ms") by *CBEAMS*, I guess
 - Commit message: [Commit Message Guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53 "gist.github.com") by *[robertpainsi](https://gist.github.com/robertpainsi)*
 - Commit guidelines: [Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits "github.com") by *[angular](https://github.com/angular)*
+
+#### Categories
+
+Commits fall into the following categories:
+
+Normal
+	:	Your regular everyday commit, that doesn't fall into any of the special categories below.
+	:	Should be atomic.
+		>	:fa-info: E.g.: Introduce 1 function, or change 1 thing, etc.\.
+
+Incremental
+	:	Not a complete `Normal` commit.
+
+		>	If you're anything like me, you know the feeling of sequentially working from different workstations, perhaps on multiple branches and projects at a time.  
+		>	In cases like this, we need an easy way to stash work on the remote.  
+		>	An `Incremental` commit is just that: a stash, that you can push from one device, so that you can pull form another and continue where you left off.
+
+	:	*Only allowed on **private** side branches.*
+	:	Have more relaxed constraints:
+
+		- Only the [header](#header) is mandatory:
+			- [Type](#type) must be `INCR`, and is mandatory.
+			- [Scope](#scope) is optional.
+			- [Subject](#subject) is optional, but highly recommended.
+
+	:	Must be squashed into a `Normal` commit before merging.
+
+Meta
+	:	Doesn't contain new information, just what's already in other commits. It's purpose is to structure that information in a new -and better- way.
+	:	Has three subtypes:
+
+		- Rebase
+			:	To fix history, etc.
+			:	Doesn't change the original commit's type.
+
+		- Squash
+			:	To turn `Incremental` commits into `Normal`
+			:	Therefore must be `Normal`
+
+		- Merge
+			:	Contains the summary of the commits in the merged branch.
+			:	Similarly to `Normal`, it must be atomic, but on a larger scale:
+
+				>	:fa-info: E.g.: Introduce 1 feature, or fix 1 bug, etc.\.
+			
+			:	Same rules apply as to `Normal` commit messages.
+
+Revert
+	:	Reverts change(s) of previous commit(s).
+	:	Body must contain an explanation of why this was beneficial
+	:	And an *ordered* list of the reverted SHAs.
+
+#### Content
+
+- Work on independent topic branches (feat, bgfx, htfx).
+- Each branch should focus on one task only.
+- <!--TODO-->
+
+##### Incremental
+
+- WIP
+- Portion of an atomic change
+- Must be able to be squashed into one or more [normal](#normal) commits
+
+##### Normal
+
+
+
+##### Merge
+
+
+
+##### Revert
+
+
+
+#### Message
+
+- Use the imperative, present tense!
+
+	> :fa-info: E.g.: 'go' instead of ~~goes~~ or ~~went~~.
+
+- Focus on the 'why' instead of the 'what' (latter can be deduced from diff)!
+
+##### Header
+
+- Mandatory.
+- Exactly one line.
+- Not longer than 50 characters.
+- Consists of the following subparts:
+
+###### Type
+
+Regular:
+
+FEAT
+	:	Feature - Adds or improves feature.
+
+BFIX
+	:	Fix - Fixes unintentional behaviour.
+
+PERF
+	:	Performance - Improves performance. 
+
+RFTR
+	:	Refactor - Code does the same thing, but differently. 
+
+STYL
+	:	Style - Formatting only changes.
+
+CHOR
+	:	Chore - Changes to auxiliary tools or build process.
+
+TEST
+	:	Test - Adds tests. 
+
+DOCS
+	:	Documentation - Documentation only changes.
+
+
+Special:
+
+INCR
+	:	Incremental - To be squashed.
+
+REVR
+	:	Revert - Reverts other commits.
+
+###### Scope
+
+- In parenthesis if present.
+- One word indication of the change's scope, if applicable.
+- Use same case.
+	> :fa-info: E.g.: 'builtinFunction'.
+
+###### Subject
+
+- Separated from \<TYPE\>(\<scope\>) by <kbd>colon+space</kbd>.
+- Capitalise first letter of sentences.
+- Short summary of the change.
+- No punctuation at the end.
+
+##### Body
+
+- Mandatory in `Merge` commits.
+- Optional, but recommended otherwise.
+- Starts and ends with a blank line.
+- Each line must not be longer than 72 characters.
+- <!--TODO-->
+
+##### Footer
+
+###### Issues
+
+- Can be multi-line, if doesn't fit in one.
+- Each line starts with `I: ` (Capital <kbd>I</kbd>, <kbd>colon</kbd>, <kbd>space</kbd>)
+- A <kbd>semicolon</kbd>, <kbd>space</kbd> separated list of issue IDs.
+
+###### Breaking Changes
+
+- Starts with the line `BREAKING CHANGE:`
+- <!--TODO-->
+
+###### Sign-off
+
+- <!--TODO-->
+
+---
+
+```
+[Header]	|<TYPE>(<scope>): <Subject>		|	Mandatory | Mandatory if applicable | Mandatory
+============|===============================|=======================================================
+[Body]		|<blank line>					|	Mandatory if body is non-empty
+[Body]		|<body content>					|	Optional
+============|===============================|=======================================================
+[Footer]	|<blank line>					|	Mandatory if footer is non-empty
+|			|---							|	Mandatory if either issues or breaking changes are listed
+|			|I: <issue-1>; <...>; <issue-n>	|	Mandatory if applicable
+|			|BREAKING CHANGE:				|	Mandatory if breaking changes are listed
+|			|<List of breaking changes>		|	Mandatory if applicable
+|			|---							|	Mandatory if either issues or breaking changes are listed
+|			|<blank line>*					|	Mandatory if sign off is present
+[Footer]	|<sign off>*					|	Mandatory on `prod`, `test` and `main` branches and `merge` commits.
+												Otherwise strongly recommended.
+```
+**\*** Added automatically by using the `-s` switch in the command line or by VS Code's Source Control addon.
+
+##### Example
+
+###### Incremental
+
+:fa-info: Only valid for `INCR`
+
+```
+INCR: Short description of change in this commit
+```
+With sign off:
+
+```
+INCR: Short description of change in this commit
+
+Signed-off-by: <userName> <<email>>
+```
+
+###### Revert
+
+```
+RVRT: Remove unstable feature-x
+
+Feature-x causes error-y [...]
+
+1. 9b60bcd1e97d4ef7baa01e95858ced3cf74cd49c
+2. 2fcc8f485f6d054bd281afae93eaf3137122a1ea
+3. 313604fd03b8c756ef7d16ab838369938bd7dd6f
+4. e827fa58f506ff15dd7b6b90b054fb3a1bc5064a
+
+---
+I: #123; #234;
+BREAKING CHANGE:
+1. feature-x
+---
+```
+
+###### Normal
+
+No linked issues, or breaking changes:
+
+```
+<TYPE>(<scope>): Short description of changes
+
+A more detailed, multi-line description of changes. It's focus in on 
+the motivation behind them and a description of their nature, rather 
+than what's otherwise obvious from a diff.
+
+Signed-off-by: <userName> <<email>>
+```
+
+With linked issues, no sign-off:
+
+```
+<TYPE>(<scope>): Short description of changes
+
+A more detailed, multi-line description of changes. It's focus in on 
+the motivation behind them and a description of their nature, rather 
+than what's otherwise obvious from a diff.
+
+---
+ #123; #456; #789;
+---
+```
+Full:
+
+```
+<TYPE>(<scope>): Short description of changes
+
+A more detailed, multi-line description of changes. It's focus in on 
+the motivation behind them and a description of their nature, rather 
+than what's otherwise obvious from a diff.
+
+---
+ #123; #456; #789;
+BREAKING CHANGE:
+1. An ordered list of removed functionality
+2. none
+3. The order should follow the order of listed issues.
+4. Change unrelated to any issue.
+---
+
+Signed-off-by: <userName> <<email>>
+```
+
+###### Merge
+
+```
+Merge PR #<ID> <branch> > <branch>
+
+A more detailed, multi-line description of changes. It's focus in on 
+the motivation behind them and a description of their nature, rather 
+than what's otherwise obvious from a diff.
+
+---
+I: #123456789; #234567891; #345678912; #456789123; #567891234; 
+I: #678912345; #789123456;
+BREAKING CHANGE:
+1. An ordered list of removed functionality
+2. none
+3. The order should follow the order of listed issues.
+4. Change unrelated to any issue.
+---
+
+Signed-off-by: <userName> <<email>>
+```
+
+```mermaid
+classDiagram
+
+class CommitMessage
+CommitMessage <|-- Header
+CommitMessage <|-- Body
+CommitMessage <|-- Footer
+
+class Header
+Header : TYPE
+Header : scope
+Header : Subject
+
+class Body
+Body : /blank line/
+Body : /text/
+Body : /blank line/
+
+class Footer
+Footer : ---
+Footer : issues
+Footer : BREAKING CHANGE
+Footer : List of breaking changes
+Footer : ---
+Footer : sign off
+
+```
 
 ### Pull Requests
 
