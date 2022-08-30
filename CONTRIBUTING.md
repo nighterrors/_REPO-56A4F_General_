@@ -703,7 +703,7 @@ Special:
 INCR
 	:	Incremental - To be squashed.
 
-REVR
+RVRT
 	:	Revert - Reverts other commits.
 
 ###### Scope
@@ -724,7 +724,7 @@ REVR
 
 - Mandatory in `Merge` commits.
 - Optional, but recommended otherwise.
-- Starts and ends with a blank line.
+- Starts with a blank line.
 - Each line must not be longer than 72 characters.
 - <!--TODO-->
 
@@ -825,7 +825,7 @@ the motivation behind them and a description of their nature, rather
 than what's otherwise obvious from a diff.
 
 ---
- #123; #456; #789;
+I: #123; #456; #789;
 ---
 ```
 Full:
